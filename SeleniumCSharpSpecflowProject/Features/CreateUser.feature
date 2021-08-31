@@ -7,6 +7,7 @@
 	When Create a new user
 	Then Verify new user is displayed correctly
 
+
 	@Scenario2
  Scenario: Login to the application with the newly created user and validate login successful
 	Given Launch the application

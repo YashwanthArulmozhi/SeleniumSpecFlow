@@ -18,6 +18,7 @@ namespace SeleniumCSharpSpecflowProject
             return driver;
         }
 
+
         public void LaunchApplication(string browserName, string url)
         {
             if (driver == null || driver.ToString().ToLower().Equals("null"))

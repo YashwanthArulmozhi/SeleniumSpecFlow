@@ -21,6 +21,7 @@ namespace SeleniumCSharpSpecflowProject
         private By label_Details = By.XPath("//b[text()='The username:']/..");
         private By link_Login = By.XPath("(//a[@href='login.php'])[1]");
 
+
         public void LaunchTheApplication()
         {
             commonActions.LaunchApplication("chrome", applicationUrl);

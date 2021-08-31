@@ -83,6 +83,7 @@ namespace SeleniumCSharpSpecflowProject
             {
                 if (stepType == "Given")
                 {
+
                     scenarioName.CreateNode<Given>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message);
                 }
                 else if(stepType == "When")
