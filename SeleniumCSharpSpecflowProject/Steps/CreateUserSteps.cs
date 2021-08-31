@@ -8,6 +8,7 @@ namespace SeleniumCSharpSpecflowProject.Steps
     {
 
         CreateUserPage CreateUser = new CreateUserPage();
+        LoginPage login = new LoginPage();
 
         [Given(@"Launch the application")]
         public void GivenLaunchTheApplication()
@@ -26,5 +27,18 @@ namespace SeleniumCSharpSpecflowProject.Steps
         {
             CreateUser.ValidateNewUser();
         }
+
+        [When(@"Provide login details and click Login")]
+        public void WhenProvideLoginDetailsAndClickLogin()
+        {
+            login.ProvideLoginDetails();
+        }
+
+        [Then(@"Validate the login successful message displayed in UI")]
+        public void ThenValidateTheLoginSuccessfulMessageDisplayedInUI()
+        {
+            login.ValidateSuccessFulLogin();
+        }
+
     }
 }

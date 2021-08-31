@@ -8,12 +8,11 @@ namespace SeleniumCSharpSpecflowProject
     class CreateUserPage
     {
         CommonActionClass commonActions = new CommonActionClass();
-        ReporterClass reporter = new ReporterClass();
 
 
         String applicationUrl = "http://thedemosite.co.uk/login.php";
-        String userName = "TestUser8";
-        string password = "Test126";
+        public  static string userName = "TestUser001";
+        public static string password = "Test126";
 
         private By link_AddUser = By.XPath("//a[contains(text(),'Add a User')]");
         private By input_EmailId = By.Name("username");

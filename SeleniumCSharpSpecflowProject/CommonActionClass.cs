@@ -43,7 +43,6 @@ namespace SeleniumCSharpSpecflowProject
             driver.FindElement(element).Click();
         }
 
-
         public IWebElement WaitForElement(By element)
         {
             return new WebDriverWait(driver, TimeSpan.FromSeconds(25)).Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(element));

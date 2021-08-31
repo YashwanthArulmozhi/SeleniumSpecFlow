@@ -14,26 +14,25 @@ namespace SeleniumCSharpSpecflowProject
     class ReporterClass
     {
 
-        public static ExtentHtmlReporter htmlReporter;
-        public static ExtentReports extentReports;
+        private static ExtentHtmlReporter htmlReporter;
+        private static ExtentReports extentReports;
         static string reportCompleteFilePath;
         static string reporterNameTimeStamp;
-        static ExtentTest featureName;
-        static ExtentTest scenarioName;
+       private static ExtentTest featureName;
+       private static ExtentTest scenarioName;
        
 
         [BeforeTestRun]
         public static void CreateExtentHtmlReporter()
         {
-            reportCompleteFilePath = Directory.GetParent(Environment.CurrentDirectory).FullName + @"\Reports\TestReport" + reporterNameTimeStamp + ".html";
-            if (!System.IO.File.Exists(reportCompleteFilePath))
-            {
+  
                 reporterNameTimeStamp = DateTime.Now.ToString("ddMMHHmmss");
                 reportCompleteFilePath = Directory.GetParent(Environment.CurrentDirectory).FullName + @"\Reports\TestReport" + reporterNameTimeStamp + ".html";
                 Console.WriteLine("Path of the Report File - > " + reportCompleteFilePath);
-            }
-            htmlReporter = new ExtentHtmlReporter(reportCompleteFilePath);
-            htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
+             htmlReporter = new ExtentHtmlReporter(reportCompleteFilePath);
+             htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
+
+            htmlReporter.Config.ReportName = "Automation Report";
             extentReports = new ExtentReports();
             extentReports.AttachReporter(htmlReporter);
         }
@@ -51,23 +50,23 @@ namespace SeleniumCSharpSpecflowProject
         }
 
         [AfterStep]
-        public void CreateStepsWithScenario(ScenarioContext scenarioContext)
+        public static void CreateStepsWithScenario(ScenarioContext scenarioContext)
         {
             var stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
             if (scenarioContext.TestError == null)
             {
-                switch (stepType.ToUpper())
+                switch (stepType)
                 {
-                    case "GIVEN":
+                    case "Given":
                         scenarioName.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
                         break;
-                    case "WHEN":
+                    case "When":
                         scenarioName.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text);
                         break;
-                    case "THEN":
+                    case "Then":
                         scenarioName.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text);
                         break;
-                    case "AND":
+                    case "And":
                         scenarioName.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
                         break;
                 }
@@ -84,18 +83,18 @@ namespace SeleniumCSharpSpecflowProject
             {
                 if (stepType == "Given")
                 {
-                    scenarioName.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Fail(scenarioContext.TestError.Message);
+                    scenarioName.CreateNode<Given>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message);
                 }
                 else if(stepType == "When")
                 {
-                    scenarioName.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Fail(scenarioContext.TestError.Message);
+                    scenarioName.CreateNode<When>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message);
                 }
                 else if(stepType == "Then") {
-                    scenarioName.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Fail(scenarioContext.TestError.Message);
+                    scenarioName.CreateNode<Then>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message);
                 }
                 else if(stepType == "And")
                 {
-                    scenarioName.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text).Fail(scenarioContext.TestError.Message);
+                    scenarioName.CreateNode<And>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message);
                 }
             }
         }
