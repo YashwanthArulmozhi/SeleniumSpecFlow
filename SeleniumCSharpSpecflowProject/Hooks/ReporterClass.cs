@@ -37,16 +37,16 @@ namespace SeleniumCSharpSpecflowProject
             extentReports.AttachReporter(htmlReporter);
         }
 
-        [BeforeFeature]
+      /*  [BeforeFeature]
         public static void CreateFeature(FeatureContext featureContext)
         {
             featureName = extentReports.CreateTest<Feature>(featureContext.FeatureInfo.Title);
-        }
+        }*/
 
         [BeforeScenario]
         public static void CreateScenario(ScenarioContext scenarioContext)
         {
-            scenarioName = featureName.CreateNode<Scenario>(scenarioContext.ScenarioInfo.Title);
+            scenarioName = extentReports.CreateTest<Scenario>(scenarioContext.ScenarioInfo.Title);
         }
 
         [AfterStep]
@@ -70,45 +70,37 @@ namespace SeleniumCSharpSpecflowProject
                         scenarioName.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
                         break;
                 }
-                      /*  if (stepType == "Given")
-                    scenarioName.CreateNode<Given>(stepContext.StepInfo.Text);
-                else if(stepType == "When")
-                    scenarioName.CreateNode<When>(stepContext.StepInfo.Text);
-                else if(stepType == "Then")
-                    scenarioName.CreateNode<Then>(stepContext.StepInfo.Text);
-                else if(stepType == "And")
-                            scenarioName.CreateNode<And>(stepContext.StepInfo.Text);*/
             }
             else if(scenarioContext.TestError != null)
             {
-                if (stepType == "Given")
+                string filePathToSaveScreenshots = Directory.GetParent(Environment.CurrentDirectory).FullName + @"\Reports\Screenshots\ScreenshotImage"+DateTime.Now.ToString("ddMMHHmmss")+".png";
+                switch (stepType)
                 {
-
-                    scenarioName.CreateNode<Given>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message);
-                }
-                else if(stepType == "When")
-                {
-                    scenarioName.CreateNode<When>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message);
-                }
-                else if(stepType == "Then") {
-                    scenarioName.CreateNode<Then>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message);
-                }
-                else if(stepType == "And")
-                {
-                    scenarioName.CreateNode<And>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message);
+                    case "Given":
+                        scenarioName.CreateNode<Given>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message).AddScreenCaptureFromPath(CommonActionClass.TakeScreenshotImage(filePathToSaveScreenshots));
+                        break;
+                    case "When":
+                        scenarioName.CreateNode<When>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message).AddScreenCaptureFromPath(CommonActionClass.TakeScreenshotImage(filePathToSaveScreenshots));
+                        break;
+                    case "Then":
+                        scenarioName.CreateNode<Then>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message).AddScreenCaptureFromPath(CommonActionClass.TakeScreenshotImage(filePathToSaveScreenshots));
+                        break;
+                    case "And":
+                        scenarioName.CreateNode<And>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message).AddScreenCaptureFromPath(CommonActionClass.TakeScreenshotImage(filePathToSaveScreenshots));
+                        break;
                 }
             }
         }
 
-      /*  public void AddPassedStepLog(string passedDescription)
+       public static void AddPassedStepLog(string passedDescription)
         {
-            featureName.Log(Status.Pass, passedDescription);
+            scenarioName.Pass(passedDescription);
         }
 
-        public void AddFailedStepLog(string failedDescription)
-        {
-            featureName.Log(Status.Fail, failedDescription);
-        }*/
+        /* public void AddFailedStepLog(string failedDescription)
+         {
+             featureName.Log(Status.Fail, failedDescription);
+         }*/
 
         [AfterTestRun]
         public static void AfterTestReporterFlush()

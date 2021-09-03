@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+	<!-- Configurations that affect the Test Framework -->
+	<RunConfiguration>
+		<MaxCpuCount>1</MaxCpuCount>
+		<!-- Path relative to directory that contains .runsettings file-->
+		<ResultsDirectory>.\TestResults</ResultsDirectory>
+
+		<!-- Framework35 | [Framework40] | Framework45 -->
+		<TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
+	</RunConfiguration>
+	<SpecRun>
+		<Profile>SpecFlowProject.srprofile</Profile>
+		<ReportFile>CustomReport.html</ReportFile>
+		<GenerateSpecRunTrait>false</GenerateSpecRunTrait>
+		<GenerateFeatureTrait>false</GenerateFeatureTrait>
+	</SpecRun>
+</RunSettings>

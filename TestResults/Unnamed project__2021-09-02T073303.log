@@ -1,0 +1,132 @@
+﻿2021-09-02T07:33:03.6742120-07:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2021-09-02T07:33:03.6743410-07:00;VSTestExecutionThread;Info;SpecFlow+Runner 3.9.7 in Framework netcore31 in x64 mode execution started
+2021-09-02T07:33:03.6743468-07:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2021-09-02T07:33:03.6762994-07:00;VSTestExecutionThread;Info;Current UserName: 'Yash', MachineName: 'DESKTOP-HBFE069'
+2021-09-02T07:33:03.7117711-07:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SeleniumCSharpSpecflowProject.dll
+2021-09-02T07:33:03.7120286-07:00;VSTestExecutionThread;Info;Output folder configured to "C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\TestResults" (default)
+2021-09-02T07:33:03.7121490-07:00;VSTestExecutionThread;Info;Profile: 
+2021-09-02T07:33:03.9970908-07:00;VSTestExecutionThread;Info;Log file path: C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\TestResults\Unnamed project__2021-09-02T073303.log
+2021-09-02T07:33:04.0116484-07:00;Thread#14;Info;Checking activation
+2021-09-02T07:33:05.0054155-07:00;Thread#14;Info;Activated.
+2021-09-02T07:33:05.0056747-07:00;Thread#14;Info;Activation check completed
+2021-09-02T07:33:05.0057533-07:00;Thread#14;Info;Starting test run
+2021-09-02T07:33:05.1814429-07:00;Thread#14;Info;Discovering target: Default
+2021-09-02T07:33:05.1816214-07:00;Thread#14;Info;Discovering tests from assembly: C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SeleniumCSharpSpecflowProject.dll
+2021-09-02T07:33:07.9695029-07:00;Thread#14;Info;Discovered tests from assembly: C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SeleniumCSharpSpecflowProject.dll
+2021-09-02T07:33:07.9734127-07:00:Test Suite Dump
+2021-09-02T07:33:07.9767019-07:00:#0: Unnamed project/ - 
+2021-09-02T07:33:07.9767438-07:00:#1: Default - 
+2021-09-02T07:33:07.9767498-07:00:#2: SeleniumCSharpSpecflowProject - 
+2021-09-02T07:33:07.9767538-07:00:#3: CreateUser - 
+2021-09-02T07:33:07.9793507-07:00:#4: Launch application and Create user and validate the user is create successfully - TestAssembly:SeleniumCSharpSpecflowProject/Feature:CreateUser/Scenario:Launch+application+and+Create+user+and+validate+the+user+is+create+successfully
+2021-09-02T07:33:07.9794666-07:00:#5: Login to the application with the newly created user and validate login successful - TestAssembly:SeleniumCSharpSpecflowProject/Feature:CreateUser/Scenario:Login+to+the+application+with+the+newly+created+user+and+validate+login+successful
+2021-09-02T07:33:07.9795471-07:00:End: Test Suite Dump
+2021-09-02T07:33:08.0312726-07:00:Thread#0:Scheduler: get next test for thread 0
+2021-09-02T07:33:08.0356306-07:00:Thread#:Scheduler: testitem #4 from normal test queue 
+2021-09-02T07:33:08.0357312-07:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2021-09-02T07:33:08.0405612-07:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2021-09-02T07:33:08.0405883-07:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2021-09-02T07:33:08.0405918-07:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2021-09-02T07:33:08.0405959-07:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2021-09-02T07:33:08.0414445-07:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2021-09-02T07:33:08.0429654-07:00:Thread#0:Scheduler: with testItemExecutionIndex 0
+2021-09-02T07:33:08.0454066-07:00:Thread #0: creating new test thread executor for SeleniumCSharpSpecflowProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+2021-09-02T07:33:08.0484200-07:00:Thread #0: Creating test assembly executor for execution model OutProc
+2021-09-02T07:33:08.0486590-07:00:Thread #0: Creating test assembly executor for execution model OutProc
+2021-09-02T07:33:08.0596495-07:00:Thread #0: using TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.OutOfProcessTestAssemblyExecutorHost to execute tests
+2021-09-02T07:33:08.0622422-07:00:starting Out Of Process Executor
+2021-09-02T07:33:08.0726113-07:00:Assembly resolving Microsoft.VisualStudio.Validation, Version=15.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-09-02T07:33:08.0751743-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' from .deps.json file
+2021-09-02T07:33:08.0751924-07:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' from .deps.json
+2021-09-02T07:33:08.0762400-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1'
+2021-09-02T07:33:08.0766796-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Validation.dll'
+2021-09-02T07:33:08.0767772-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Validation.exe'
+2021-09-02T07:33:08.0768196-07:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1'
+2021-09-02T07:33:08.0770145-07:00:TargetFramework: .NETCoreApp,Version=v3.1
+2021-09-02T07:33:08.0776582-07:00:Tfm: netcoreapp3.1
+2021-09-02T07:33:08.0776820-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1'
+2021-09-02T07:33:08.0776849-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Validation.dll'
+2021-09-02T07:33:08.0777496-07:00:[AssemblyCache] Found file 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Validation.dll' for assembly 'Microsoft.VisualStudio.Validation'
+2021-09-02T07:33:08.0860990-07:00:[AssemblyCache] Resolved 'Microsoft.VisualStudio.Validation' to C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Validation.dll
+2021-09-02T07:33:08.0868060-07:00:Starting callback TCP Rpc server
+2021-09-02T07:33:08.1110198-07:00:Asynchronously starting background TCP Rpc Server on port 32768
+2021-09-02T07:33:08.1111103-07:00:Started callback TCP Rpc server on port 32768
+2021-09-02T07:33:08.1111141-07:00:Starting logger TCP Rpc server
+2021-09-02T07:33:08.1411443-07:00:Asynchronously starting background TCP Rpc Server on port 32769
+2021-09-02T07:33:08.1412076-07:00:Started logger TCP Rpc server on port 32769
+2021-09-02T07:33:08.3162862-07:00;Thread#14;Info;Executor full path resolved: C:\Program Files\dotnet\dotnet.exe
+2021-09-02T07:33:08.3195157-07:00;Thread#14;Info;Starting SpecFlow+ Runner executor process with attached debugger...
+2021-09-02T07:33:09.3665158-07:00;Thread#14;Info;Successfully started SpecFlow+ Runner executor process
+2021-09-02T07:33:09.3769764-07:00:Out of Process Executor 10556 started
+2021-09-02T07:33:09.3770071-07:00:Waiting for endpoint
+2021-09-02T07:33:17.7194379-07:00:Assembly resolving Microsoft.VisualStudio.Threading, Version=15.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-09-02T07:33:17.7195292-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' from .deps.json file
+2021-09-02T07:33:17.7195405-07:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' from .deps.json
+2021-09-02T07:33:17.7195486-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1'
+2021-09-02T07:33:17.7195512-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Threading.dll'
+2021-09-02T07:33:17.7196030-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Threading.exe'
+2021-09-02T07:33:17.7196340-07:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1'
+2021-09-02T07:33:17.7196419-07:00:TargetFramework: .NETCoreApp,Version=v3.1
+2021-09-02T07:33:17.7197689-07:00:Tfm: netcoreapp3.1
+2021-09-02T07:33:17.7197919-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1'
+2021-09-02T07:33:17.7197977-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Threading.dll'
+2021-09-02T07:33:17.7198676-07:00:[AssemblyCache] Found file 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Threading.dll' for assembly 'Microsoft.VisualStudio.Threading'
+2021-09-02T07:33:17.7326773-07:00:[AssemblyCache] Resolved 'Microsoft.VisualStudio.Threading' to C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Threading.dll
+2021-09-02T07:33:18.7774446-07:00:Remote executor port received: 32770
+2021-09-02T07:33:18.7778550-07:00:Creating executor TCP client on port 32770
+2021-09-02T07:33:18.7782426-07:00:Created executor TCP client on port 32770
+2021-09-02T07:33:18.7782510-07:00:Connecting to remote executor TCP server
+2021-09-02T07:33:18.7792197-07:00:Connected remote executor TCP server
+2021-09-02T07:33:18.7793506-07:00:trying to connect to Out of Process Executor the 1 attempt
+2021-09-02T07:33:18.7793622-07:00:Connection to Out of Process Executor established in the 1 attempt
+2021-09-02T07:33:19.0105824-07:00:2021-09-02T07:33:19.0088573-07:00:OutOfProcessTestAssemblyExecutor: initialized for C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SeleniumCSharpSpecflowProject.dll on test thread #0
+2021-09-02T07:33:19.0213427-07:00:Endpoint 10556 started
+2021-09-02T07:33:19.0403789-07:00:2021-09-02T07:33:19.0392305-07:00:OutOfProcessTestAssemblyExecutor: running tests...
+2021-09-02T07:33:19.1942973-07:00:2021-09-02T07:33:19.1929230-07:00:Assembly resolving TechTalk.SpecFlow, Version=3.9.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41
+2021-09-02T07:33:19.2033893-07:00:2021-09-02T07:33:19.2021922-07:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecFlow' from .deps.json file
+2021-09-02T07:33:19.2083027-07:00:2021-09-02T07:33:19.2075442-07:00:[AssemblyCache] Resolved 'TechTalk.SpecFlow' to 'C:\Users\Yash\.nuget\packages\specflow\3.9.8\lib\netstandard2.0\TechTalk.SpecFlow.dll'
+2021-09-02T07:33:19.7001754-07:00:2021-09-02T07:33:19.6978323-07:00:Thread#0:T:-> Loading plugin C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SeleniumCSharpSpecflowProject.dll
+2021-09-02T07:33:19.7048981-07:00:2021-09-02T07:33:19.7034560-07:00:Assembly resolving Microsoft.Extensions.DependencyModel, Version=1.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-09-02T07:33:19.7080170-07:00:2021-09-02T07:33:19.7067357-07:00:[AssemblyCache] Trying to resolve 'Microsoft.Extensions.DependencyModel' from .deps.json file
+2021-09-02T07:33:19.7113536-07:00:2021-09-02T07:33:19.7098853-07:00:[AssemblyCache] Resolved 'Microsoft.Extensions.DependencyModel' to 'C:\Users\Yash\.nuget\packages\microsoft.extensions.dependencymodel\1.0.3\lib\netstandard1.6\Microsoft.Extensions.DependencyModel.dll'
+2021-09-02T07:33:19.9212695-07:00:2021-09-02T07:33:19.9191068-07:00:Assembly resolving Microsoft.DotNet.PlatformAbstractions, Version=1.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-09-02T07:33:19.9233472-07:00:2021-09-02T07:33:19.9226343-07:00:[AssemblyCache] Trying to resolve 'Microsoft.DotNet.PlatformAbstractions' from .deps.json file
+2021-09-02T07:33:19.9259085-07:00:2021-09-02T07:33:19.9250752-07:00:[AssemblyCache] Resolved 'Microsoft.DotNet.PlatformAbstractions' to 'C:\Users\Yash\.nuget\packages\microsoft.dotnet.platformabstractions\1.0.3\lib\netstandard1.3\Microsoft.DotNet.PlatformAbstractions.dll'
+2021-09-02T07:33:19.9650104-07:00:2021-09-02T07:33:19.9641017-07:00:Thread#0:T:-> Missing [assembly:RuntimePlugin] attribute in SeleniumCSharpSpecflowProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null. Please check https://go.specflow.org/doc-plugins for details.
+2021-09-02T07:33:19.9717208-07:00:2021-09-02T07:33:19.9710041-07:00:Thread#0:T:-> Loading plugin C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\LivingDoc.SpecFlowPlugin.dll
+2021-09-02T07:33:19.9829261-07:00:2021-09-02T07:33:19.9821043-07:00:Assembly resolving LivingDoc.Dtos, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+2021-09-02T07:33:19.9847241-07:00:2021-09-02T07:33:19.9840020-07:00:[AssemblyCache] Trying to resolve 'LivingDoc.Dtos' from .deps.json file
+2021-09-02T07:33:19.9865710-07:00:2021-09-02T07:33:19.9860409-07:00:[AssemblyCache] Resolved 'LivingDoc.Dtos' to 'C:\Users\Yash\.nuget\packages\specflow.plus.livingdocplugin\3.9.50\lib\netstandard2.0\LivingDoc.Dtos.dll'
+2021-09-02T07:33:20.0326487-07:00:2021-09-02T07:33:20.0318308-07:00:Thread#0:T:-> Loading plugin C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecRun.Runtime.SpecFlowPlugin.dll
+2021-09-02T07:33:20.0561553-07:00:2021-09-02T07:33:20.0552134-07:00:Thread#0:T:-> Using default config
+2021-09-02T07:33:20.0713177-07:00:2021-09-02T07:33:20.0703531-07:00:Assembly resolving Cucumber.Messages, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b10c5988214f940c
+2021-09-02T07:33:20.0731507-07:00:2021-09-02T07:33:20.0724330-07:00:[AssemblyCache] Trying to resolve 'Cucumber.Messages' from .deps.json file
+2021-09-02T07:33:20.0747316-07:00:2021-09-02T07:33:20.0741154-07:00:[AssemblyCache] Resolved 'Cucumber.Messages' to 'C:\Users\Yash\.nuget\packages\cucumber.messages\6.0.1\lib\netstandard2.0\Cucumber.Messages.dll'
+2021-09-02T07:33:20.1402895-07:00:2021-09-02T07:33:20.1392814-07:00:Assembly resolving Google.Protobuf, Version=3.7.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604
+2021-09-02T07:33:20.1418529-07:00:2021-09-02T07:33:20.1412198-07:00:[AssemblyCache] Trying to resolve 'Google.Protobuf' from .deps.json file
+2021-09-02T07:33:20.1437466-07:00:2021-09-02T07:33:20.1430820-07:00:[AssemblyCache] Resolved 'Google.Protobuf' to 'C:\Users\Yash\.nuget\packages\google.protobuf\3.7.0\lib\netstandard1.0\Google.Protobuf.dll'
+2021-09-02T07:33:20.2695466-07:00:2021-09-02T07:33:20.2664686-07:00:Assembly resolving Microsoft.VisualStudio.TestPlatform.ObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-09-02T07:33:20.2731499-07:00:2021-09-02T07:33:20.2718273-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.TestPlatform.ObjectModel' from .deps.json file
+2021-09-02T07:33:20.2763740-07:00:2021-09-02T07:33:20.2752198-07:00:[AssemblyCache] Resolved 'Microsoft.VisualStudio.TestPlatform.ObjectModel' to 'C:\Users\Yash\.nuget\packages\microsoft.testplatform.objectmodel\16.5.0\lib\netstandard2.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll'
+2021-09-02T07:33:20.4628192-07:00:2021-09-02T07:33:20.4613995-07:00:Assembly resolving SpecFlow.Internal.Json, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41
+2021-09-02T07:33:20.4651590-07:00:2021-09-02T07:33:20.4641975-07:00:[AssemblyCache] Trying to resolve 'SpecFlow.Internal.Json' from .deps.json file
+2021-09-02T07:33:20.4666011-07:00:2021-09-02T07:33:20.4660379-07:00:[AssemblyCache] Resolved 'SpecFlow.Internal.Json' to 'C:\Users\Yash\.nuget\packages\specflow.internal.json\1.0.8\lib\netstandard2.0\SpecFlow.Internal.Json.dll'
+2021-09-02T07:33:20.6167789-07:00:2021-09-02T07:33:20.6159545-07:00:Assembly resolving ExtentReports, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+2021-09-02T07:33:20.6187818-07:00:2021-09-02T07:33:20.6178437-07:00:[AssemblyCache] Trying to resolve 'ExtentReports' from .deps.json file
+2021-09-02T07:33:20.6205896-07:00:2021-09-02T07:33:20.6199290-07:00:[AssemblyCache] Resolved 'ExtentReports' to 'C:\Users\Yash\.nuget\packages\extentreports\4.1.0\lib\netstandard2.0\ExtentReports.dll'
+2021-09-02T07:33:20.7029513-07:00:2021-09-02T07:33:20.7014742-07:00:Thread#0:T:Path of the Report File - > C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\Reports\TestReport0209073320.html
+2021-09-02T07:33:20.7083560-07:00:2021-09-02T07:33:20.7068775-07:00:Assembly resolving MongoDB.Bson, Version=2.10.0.0, Culture=neutral, PublicKeyToken=null
+2021-09-02T07:33:20.7106559-07:00:2021-09-02T07:33:20.7097078-07:00:[AssemblyCache] Trying to resolve 'MongoDB.Bson' from .deps.json file
+2021-09-02T07:33:20.7133908-07:00:2021-09-02T07:33:20.7121842-07:00:[AssemblyCache] Resolved 'MongoDB.Bson' to 'C:\Users\Yash\.nuget\packages\mongodb.bson\2.10.0\lib\netstandard1.5\MongoDB.Bson.dll'
+2021-09-02T07:33:20.9095361-07:00:2021-09-02T07:33:20.9047967-07:00:Assembly resolving RazorEngine.NetCore, Version=0.0.0.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a
+2021-09-02T07:33:20.9684563-07:00:2021-09-02T07:33:20.9557102-07:00:[AssemblyCache] Trying to resolve 'RazorEngine.NetCore' from .deps.json file
+2021-09-02T07:33:20.9782162-07:00:2021-09-02T07:33:20.9773327-07:00:[AssemblyCache] Resolved 'RazorEngine.NetCore' to 'C:\Users\Yash\.nuget\packages\razorengine.netcore\2.2.6\lib\netcoreapp2.2\RazorEngine.NetCore.dll'
+2021-09-02T07:33:21.2864615-07:00:2021-09-02T07:33:21.2840851-07:00:Assembly resolving Microsoft.AspNetCore.Razor.Language, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-09-02T07:33:21.2940115-07:00:2021-09-02T07:33:21.2882774-07:00:[AssemblyCache] Trying to resolve 'Microsoft.AspNetCore.Razor.Language' from .deps.json file
+2021-09-02T07:33:21.2981197-07:00:2021-09-02T07:33:21.2960608-07:00:[AssemblyCache] Resolved 'Microsoft.AspNetCore.Razor.Language' to 'C:\Users\Yash\.nuget\packages\microsoft.aspnetcore.razor.language\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Razor.Language.dll'
+2021-09-02T07:33:21.8394395-07:00:Thread#0: Test #4/0 is started on thread #0
+2021-09-02T07:33:21.9086178-07:00:2021-09-02T07:33:21.9068345-07:00:Thread#0:B:Given Launch the application
+2021-09-02T07:33:22.0323348-07:00:2021-09-02T07:33:22.0308424-07:00:Assembly resolving WebDriver, Version=3.141.0.0, Culture=neutral, PublicKeyToken=null
+2021-09-02T07:33:22.0339189-07:00:2021-09-02T07:33:22.0333956-07:00:[AssemblyCache] Trying to resolve 'WebDriver' from .deps.json file
+2021-09-02T07:33:22.0356426-07:00:2021-09-02T07:33:22.0350250-07:00:[AssemblyCache] Resolved 'WebDriver' to 'C:\Users\Yash\.nuget\packages\selenium.webdriver\3.141.0\lib\netstandard2.0\WebDriver.dll'
+2021-09-02T07:37:26.2689249-07:00:2021-09-02T07:37:26.2345234-07:00:Thread#0:T:error: Could not find a part of the path 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\Config.txt'. (244.2s)

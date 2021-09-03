@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[16.5.0, )"
             },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.5.4, )"
+            },
             "Selenium.Support": {
               "target": "Package",
               "version": "[3.141.0, )"
