@@ -13,10 +13,9 @@ namespace SeleniumCSharpSpecflowProject
 {
     class CommonActionClass : ReporterClass
     {
-        BrowserClass browserClass = new BrowserClass();
         static IWebDriver driver;
 
-        public string ReadDataFromConfigFile(string key)
+        public static string ReadDataFromConfigFile(string key)
         {
             Dictionary<string, string> Configdata = new Dictionary<string, string>();
             string value = null;
@@ -49,7 +48,7 @@ namespace SeleniumCSharpSpecflowProject
 
         public void LaunchApplication(string url)
         {
-                driver.Navigate().GoToUrl(url);
+            driver.Url = url;
         }
 
         public void SendValue(By element, string value)
@@ -67,6 +66,11 @@ namespace SeleniumCSharpSpecflowProject
             return new WebDriverWait(driver, TimeSpan.FromSeconds(25)).Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(element));
         }
 
+        public int GetSizeOfElements(By element)
+        {
+            return driver.FindElements(element).Count;
+        }
+
         public bool WaitForDynamicObjectToAppear(By Element)
         {
                 int i = 1;
@@ -81,7 +85,7 @@ namespace SeleniumCSharpSpecflowProject
                         Thread.Sleep(2000);
                         i++;
                     }
-                } while (i <= 3);
+                } while (i <= 5);
             return false;
         }
 
@@ -170,21 +174,21 @@ namespace SeleniumCSharpSpecflowProject
             }
         }
 
-        public string ReadDataFromExcel(String columnName)
+        public static string ReadDataFromExcel(String columnName)
         {
             string pathOfExcelFile = Directory.GetParent(Environment.CurrentDirectory).FullName + @"\SeleniumCSharpSpecflowProject\TestData.xlsx";
             string testData;
             FileStream fileStream = new FileStream(pathOfExcelFile,FileMode.Open,FileAccess.ReadWrite);
-                IWorkbook wb;
+            IWorkbook workBook;
             string extension = pathOfExcelFile.Split(".")[1].Trim();
             if (extension.Equals("xls"))
             {
-                wb = new HSSFWorkbook(fileStream);
+                workBook = new HSSFWorkbook(fileStream);
             }
-            else { 
-                wb = new XSSFWorkbook(fileStream);
+            else {
+                workBook = new XSSFWorkbook(fileStream);
             }
-            ISheet sheet = wb.GetSheet(ReadDataFromConfigFile("Environment"));
+            ISheet sheet = workBook.GetSheet(ReadDataFromConfigFile("Environment"));
             IRow rowobj;
             int cell=-1;
           //  int row = -1;
@@ -200,18 +204,39 @@ namespace SeleniumCSharpSpecflowProject
              }
              rowobj = sheet.GetRow(1);
              testData = rowobj.GetCell(cell).StringCellValue.Trim();
-            //Alternate
-            //Pick data with Row and column 
-          /*  int rowCount = sheet.PhysicalNumberOfRows;
+            return testData;
+        }
+
+        public static string ReadDataFromExcel(string rowName,string columnName)
+        {
+            string pathOfExcelFile = Directory.GetParent(Environment.CurrentDirectory).FullName + @"\SeleniumCSharpSpecflowProject\ScenarioLevelTestData.xlsx";
+            string testData="";
+            FileStream fileStream = new FileStream(pathOfExcelFile, FileMode.Open, FileAccess.ReadWrite);
+            IWorkbook workBook;
+            string extension = pathOfExcelFile.Split(".")[1].Trim();
+            if (extension.Equals("xls"))
+            {
+                workBook = new HSSFWorkbook(fileStream);
+            }
+            else
+            {
+                workBook = new XSSFWorkbook(fileStream);
+            }
+            ISheet sheet = workBook.GetSheet(ReadDataFromConfigFile("Environment"));
+            IRow rowobj;
+            int cell = -1;
+            int row = -1;
+            int rowCount = sheet.PhysicalNumberOfRows;
             for (int j = 0; j <= rowCount - 1; j++)
             {
-                if (sheet.GetRow(j).GetCell(0).StringCellValue.Trim().Equals("rowName", StringComparison.OrdinalIgnoreCase))
+                if (sheet.GetRow(j).GetCell(0).StringCellValue.Trim().Equals(rowName, StringComparison.OrdinalIgnoreCase))
                 {
                     row = j;
+                    break;
                 }
             }
             rowobj = sheet.GetRow(0);
-            int Columncount1 = rowobj.PhysicalNumberOfCells;
+            int Columncount = rowobj.PhysicalNumberOfCells;
             for (int i = 0; i <= Columncount - 1; i++)
             {
                 if (rowobj.GetCell(i).StringCellValue.Trim().Equals(columnName, StringComparison.OrdinalIgnoreCase))
@@ -221,19 +246,22 @@ namespace SeleniumCSharpSpecflowProject
                 }
             }
             rowobj = sheet.GetRow(row);
-            testData = rowobj.GetCell(cell).StringCellValue.Trim();*/
+            if(!String.IsNullOrEmpty(rowobj.GetCell(cell).StringCellValue))
+            {
+                testData = rowobj.GetCell(cell).StringCellValue.Trim();
+            }
             return testData;
         }
 
-      /*  public void PassedStepMessage(string passedMessage)
-        {
-            AddPassedStepLog(passedMessage);
-        }
+        /*  public void PassedStepMessage(string passedMessage)
+          {
+              AddPassedStepLog(passedMessage);
+          }
 
-        public void FailedStepMessage(string failedMessage)
-        {
-            FailedStepMessage(failedMessage);
-        }*/
+          public void FailedStepMessage(string failedMessage)
+          {
+              FailedStepMessage(failedMessage);
+          }*/
 
         public void CloseBrowser()
         {

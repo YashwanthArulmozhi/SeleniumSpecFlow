@@ -19,8 +19,8 @@ namespace SeleniumCSharpSpecflowProject.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("CreateUser", Description="\tApplication to create a new user", SourceFile="Features\\CreateUser.feature", SourceLine=0)]
-    public partial class CreateUserFeature
+    [TechTalk.SpecRun.FeatureAttribute("DemoQa", Description="\tApplication to create a new user and Login", SourceFile="Features\\CreateUser.feature", SourceLine=0)]
+    public partial class DemoQaFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -34,7 +34,7 @@ namespace SeleniumCSharpSpecflowProject.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "CreateUser", "\tApplication to create a new user", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "DemoQa", "\tApplication to create a new user and Login", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -149,6 +149,55 @@ namespace SeleniumCSharpSpecflowProject.Features
 #line hidden
 #line 15
  testRunner.Then("Validate the login successful message displayed in UI", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 16
+ testRunner.Then("Logout of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Login to the application with the newly created user and Delete the newly created" +
+            " user", new string[] {
+                "Scenario3"}, SourceLine=19)]
+        public virtual void LoginToTheApplicationWithTheNewlyCreatedUserAndDeleteTheNewlyCreatedUser()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Scenario3"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login to the application with the newly created user and Delete the newly created" +
+                    " user", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 20
+ this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 21
+ testRunner.Given("Launch the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 22
+ testRunner.When("Provide login details and click Login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 23
+ testRunner.Then("Validate the login successful message displayed in UI", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 24
+ testRunner.Then("Delete the newly Created user and validate", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

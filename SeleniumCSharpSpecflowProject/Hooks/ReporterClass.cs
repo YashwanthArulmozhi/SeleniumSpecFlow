@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Threading;
 using TechTalk.SpecFlow;
 
 namespace SeleniumCSharpSpecflowProject
@@ -20,14 +21,16 @@ namespace SeleniumCSharpSpecflowProject
         static string reporterNameTimeStamp;
        private static ExtentTest featureName;
        private static ExtentTest scenarioName;
+        static ExtentTest stepName;
+        public static ThreadLocal<ExtentTest> scenarioThreadLocal = new ThreadLocal<ExtentTest>();
        
 
         [BeforeTestRun]
         public static void CreateExtentHtmlReporter()
         {
-  
-                reporterNameTimeStamp = DateTime.Now.ToString("ddMMHHmmss");
-                reportCompleteFilePath = Directory.GetParent(Environment.CurrentDirectory).FullName + @"\Reports\TestReport" + reporterNameTimeStamp + ".html";
+            
+                reporterNameTimeStamp = DateTime.Now.ToString("dd_MMM_yyyy_HH_mm_ss");
+                reportCompleteFilePath = Directory.GetParent(Environment.CurrentDirectory).FullName + @"\Reports\TestReport\Report_"+reporterNameTimeStamp+@"\";
                 Console.WriteLine("Path of the Report File - > " + reportCompleteFilePath);
              htmlReporter = new ExtentHtmlReporter(reportCompleteFilePath);
              htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
@@ -37,70 +40,96 @@ namespace SeleniumCSharpSpecflowProject
             extentReports.AttachReporter(htmlReporter);
         }
 
-      /*  [BeforeFeature]
+        [BeforeFeature]
         public static void CreateFeature(FeatureContext featureContext)
         {
-            featureName = extentReports.CreateTest<Feature>(featureContext.FeatureInfo.Title);
-        }*/
+            featureName = extentReports.CreateTest<Feature>(featureContext.FeatureInfo.Title, featureContext.FeatureInfo.Description);
+        }
 
         [BeforeScenario]
         public static void CreateScenario(ScenarioContext scenarioContext)
         {
-            scenarioName = extentReports.CreateTest<Scenario>(scenarioContext.ScenarioInfo.Title);
+            scenarioName = featureName.CreateNode<Scenario>(scenarioContext.ScenarioInfo.Title);
+           
+        }
+
+        [BeforeStep]
+        public static void createStep(ScenarioContext scenarioContext)
+        {
+            var stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
+            switch (stepType)
+            {
+                case "Given":
+                    stepName = scenarioName.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
+                    scenarioThreadLocal.Value = stepName;
+                    break;
+                case "When":
+                    stepName = scenarioName.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text);
+                    scenarioThreadLocal.Value = stepName;
+                    break;
+                case "Then":
+                    stepName = scenarioName.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text);
+                    scenarioThreadLocal.Value = stepName;
+                    break;
+                case "And":
+                    stepName = scenarioName.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
+                    scenarioThreadLocal.Value = stepName;
+                    break;
+            }
         }
 
         [AfterStep]
         public static void CreateStepsWithScenario(ScenarioContext scenarioContext)
         {
             var stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
-            if (scenarioContext.TestError == null)
+            if (scenarioContext.ScenarioExecutionStatus == ScenarioExecutionStatus.OK)
             {
                 switch (stepType)
                 {
                     case "Given":
-                        scenarioName.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
+                        stepName.Pass("Step Passed Successfully");
                         break;
                     case "When":
-                        scenarioName.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text);
+                        stepName.Pass("Step Passed Successfully");
                         break;
                     case "Then":
-                        scenarioName.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text);
+                        stepName.Pass("Step Passed Successfully");
                         break;
                     case "And":
-                        scenarioName.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
+                        stepName.Pass("Step Passed Successfully");
                         break;
                 }
             }
-            else if(scenarioContext.TestError != null)
+            else if(scenarioContext.ScenarioExecutionStatus == ScenarioExecutionStatus.TestError)
             {
                 string filePathToSaveScreenshots = Directory.GetParent(Environment.CurrentDirectory).FullName + @"\Reports\Screenshots\ScreenshotImage"+DateTime.Now.ToString("ddMMHHmmss")+".png";
                 switch (stepType)
                 {
                     case "Given":
-                        scenarioName.CreateNode<Given>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message).AddScreenCaptureFromPath(CommonActionClass.TakeScreenshotImage(filePathToSaveScreenshots));
+                        stepName.Fail(scenarioContext.TestError.Message).AddScreenCaptureFromPath(CommonActionClass.TakeScreenshotImage(filePathToSaveScreenshots));
                         break;
                     case "When":
-                        scenarioName.CreateNode<When>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message).AddScreenCaptureFromPath(CommonActionClass.TakeScreenshotImage(filePathToSaveScreenshots));
+                        stepName.Fail(scenarioContext.TestError.Message).AddScreenCaptureFromPath(CommonActionClass.TakeScreenshotImage(filePathToSaveScreenshots));
                         break;
                     case "Then":
-                        scenarioName.CreateNode<Then>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message).AddScreenCaptureFromPath(CommonActionClass.TakeScreenshotImage(filePathToSaveScreenshots));
+                        stepName.Fail(scenarioContext.TestError.Message).AddScreenCaptureFromPath(CommonActionClass.TakeScreenshotImage(filePathToSaveScreenshots));
                         break;
                     case "And":
-                        scenarioName.CreateNode<And>(scenarioContext.StepContext.StepInfo.Text).Fail(scenarioContext.TestError.Message).AddScreenCaptureFromPath(CommonActionClass.TakeScreenshotImage(filePathToSaveScreenshots));
+                        stepName.Fail(scenarioContext.TestError.Message).AddScreenCaptureFromPath(CommonActionClass.TakeScreenshotImage(filePathToSaveScreenshots));
                         break;
                 }
             }
         }
 
-       public static void AddPassedStepLog(string passedDescription)
+       public static void AddStepLog(string passedDescription)
         {
-            scenarioName.Pass(passedDescription);
+            stepName.Pass(passedDescription);
         }
 
-        /* public void AddFailedStepLog(string failedDescription)
+         public static void AddFailedStepLog(string failedDescription)
          {
-             featureName.Log(Status.Fail, failedDescription);
-         }*/
+            stepName.Fail(failedDescription);
+         }
 
         [AfterTestRun]
         public static void AfterTestReporterFlush()
