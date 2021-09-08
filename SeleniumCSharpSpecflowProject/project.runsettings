@@ -10,7 +10,7 @@
 		<TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
 	</RunConfiguration>
 	<SpecRun>
-		<Profile>SpecFlowProject.srprofile</Profile>
+		<Profile>Default.srprofile</Profile>
 		<ReportFile>CustomReport.html</ReportFile>
 		<GenerateSpecRunTrait>false</GenerateSpecRunTrait>
 		<GenerateFeatureTrait>false</GenerateFeatureTrait>

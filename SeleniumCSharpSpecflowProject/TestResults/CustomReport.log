@@ -1,0 +1,43 @@
+﻿2021-09-08T03:36:37.4947343-07:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2021-09-08T03:36:37.4947343-07:00;VSTestExecutionThread;Info;SpecFlow+Runner 3.9.7 in Framework clr40 in x86 mode execution started
+2021-09-08T03:36:37.4947343-07:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\Yash\.nuget\packages\specrun.runner\3.9.7\tools\net461\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2021-09-08T03:36:37.4957408-07:00;VSTestExecutionThread;Info;Current UserName: 'Yash', MachineName: 'DESKTOP-HBFE069'
+2021-09-08T03:36:38.2617323-07:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SeleniumCSharpSpecflowProject.dll
+2021-09-08T03:36:38.2627299-07:00;VSTestExecutionThread;Info;Output folder configured to "C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\TestResults" (default)
+2021-09-08T03:36:38.2627299-07:00;VSTestExecutionThread;Info;Profile: SpecflowProjectReport
+2021-09-08T03:36:38.8658126-07:00;VSTestExecutionThread;Info;Log file path: C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\TestResults\CustomReport.log
+2021-09-08T03:36:38.8897649-07:00;Thread#13;Info;Checking activation
+2021-09-08T03:36:42.0616590-07:00;Thread#13;Info;Activated.
+2021-09-08T03:36:42.0626576-07:00;Thread#13;Info;Activation check completed
+2021-09-08T03:36:42.0629855-07:00;Thread#13;Info;Starting test run
+2021-09-08T03:36:43.2907348-07:00;Thread#13;Info;Discovering target: Default
+2021-09-08T03:36:43.2917110-07:00;Thread#13;Info;Discovering tests from assembly: C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SeleniumCSharpSpecflowProject.dll
+2021-09-08T03:36:48.5093085-07:00;Thread#13;Info;Discovered tests from assembly: C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SeleniumCSharpSpecflowProject.dll
+2021-09-08T03:36:48.5142615-07:00:Test Suite Dump
+2021-09-08T03:36:48.5202455-07:00:#0: SpecflowProjectReport/SpecflowProjectReport - 
+2021-09-08T03:36:48.5202455-07:00:End: Test Suite Dump
+2021-09-08T03:36:48.6767057-07:00:Thread#0:Scheduler: get next test for thread 0
+2021-09-08T03:36:48.6826791-07:00:Thread#:Scheduler: at the end of normal test queue
+2021-09-08T03:36:48.6836769-07:00:Thread#0:Scheduler: enumerator for thread is at end
+2021-09-08T03:36:48.6836769-07:00:Thread#0:Scheduler: No more tests for thread
+2021-09-08T03:36:48.6906486-07:00:Trying to cancel thread
+2021-09-08T03:36:48.6906486-07:00:Thread cancelled
+2021-09-08T03:36:48.7252129-07:00:Thread#-1:Scheduler: get next test for thread -1
+2021-09-08T03:36:48.7252129-07:00:Thread#:Scheduler: at the end of normal test queue
+2021-09-08T03:36:48.7252129-07:00:Thread#-1:Scheduler: enumerator for thread is at end
+2021-09-08T03:36:48.7292123-07:00;Thread#13;Info;test run finished
+2021-09-08T03:36:48.7293018-07:00;Thread#13;Info;publishing test results
+2021-09-08T03:36:48.8499674-07:00;Thread#13;Info;test results published
+2021-09-08T03:36:48.8509670-07:00;Thread#13;Info;generating reports
+2021-09-08T03:36:49.1707050-07:00;Thread#13;Info;Starting external report generation process
+2021-09-08T03:36:56.1391216-07:00;Thread#13;Info;Successfully generated reports.
+2021-09-08T03:36:56.1410804-07:00;Thread#13;Info;Successfully generated reports
+2021-09-08T03:36:56.2005873-07:00:Total: 0
+2021-09-08T03:36:56.2035789-07:00:Succeeded: 0
+2021-09-08T03:36:56.2039734-07:00:Ignored: 0
+2021-09-08T03:36:56.2045759-07:00:Pending: 0
+2021-09-08T03:36:56.2055730-07:00:Skipped: 0
+2021-09-08T03:36:56.2055730-07:00:Failed: 0
+2021-09-08T03:36:56.2750925-07:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2021-09-08T03:36:56.2750925-07:00;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\TestResults\CustomReport.html'
+========== End of log file ==========

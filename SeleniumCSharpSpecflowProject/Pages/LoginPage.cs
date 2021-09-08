@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,7 +19,7 @@ namespace SeleniumCSharpSpecflowProject
         private By label_SuccessMsg = By.XPath("//b[contains(text(),'Successful Login')]");
         private By button_Login = By.XPath("//input[@value='Test Login']");
         private By link_Logout = By.XPath("//a[text()='Logout']");
-       String DeleteLink = "//li[contains(text(),'PARAMETER')]/a";
+       String DeleteLink = "//a[contains(text(),'PARAMETER')]/a";
 
 
         public void LogIn()
@@ -61,19 +62,26 @@ namespace SeleniumCSharpSpecflowProject
 
         public void DeleteUserAndValidate()
         {
-            DeleteLink = DeleteLink.Replace("PARAMETER", CreateUserPage.userName);
-            By link_Delete = By.XPath(DeleteLink);
-            WaitForElement(link_Delete);
-            ClickElement(link_Delete);
-            WaitForDynamicObjectToAppear(link_Delete);
-            //Thread.Sleep(7000);
-            if(GetSizeOfElements(link_Delete)==0)
+            try
             {
-                ReporterClass.AddStepLog("User is Deleted");
+                DeleteLink = DeleteLink.Replace("PARAMETER", CreateUserPage.userName);
+                By link_Delete = By.XPath(DeleteLink);
+                WaitForElement(link_Delete);
+                ClickElement(link_Delete);
+                WaitForDynamicObjectToAppear(link_Delete);
+                if (GetSizeOfElements(link_Delete) == 0)
+                {
+                    ReporterClass.AddStepLog("User is Deleted");
+                }
+                else
+                {
+                   ReporterClass.AddFailedStepLog("User is not Deleted");
+                }
             }
-            else
+            catch(Exception nse)
             {
-                ReporterClass.AddFailedStepLog("User is not Deleted");
+                // Logout();
+                ReporterClass.AddFailedStepLog(" Element is not available in UI. " + nse.InnerException);
             }
         }
 

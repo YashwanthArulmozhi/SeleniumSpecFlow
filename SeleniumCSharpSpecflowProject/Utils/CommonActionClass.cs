@@ -8,6 +8,8 @@ using System.IO;
 using NPOI.XSSF.UserModel;
 using NPOI.SS.UserModel;
 using NPOI.HSSF.UserModel;
+using NUnit.Framework;
+using SpecFlowWithNunit.Utils;
 
 namespace SeleniumCSharpSpecflowProject
 {
@@ -15,29 +17,10 @@ namespace SeleniumCSharpSpecflowProject
     {
         static IWebDriver driver;
 
-        public static string ReadDataFromConfigFile(string key)
-        {
-            Dictionary<string, string> Configdata = new Dictionary<string, string>();
-            string value = null;
-            string filePath = Directory.GetParent(Environment.CurrentDirectory).FullName + @"\SeleniumCSharpSpecflowProject\Config.txt";
-            foreach(string data in File.ReadAllLines(filePath))
-            {
-                Configdata.Add(data.Split('=')[0].ToLower().Trim(),data.Split('=')[1].ToUpper().TrimStart().TrimEnd());
-            }
-            value = Configdata[key.ToLower()];
-            if (!String.IsNullOrEmpty(value))
-            {
-                return value;
-            }
-            else
-            {
-                throw new Exception("Provide Valid Key Property from Config to get the value");
-            }
-        }
 
         public CommonActionClass()
         {
-            string browser = ReadDataFromConfigFile("BrowserName");
+            string browser = FileReaderUtils.ReadDataFromConfigFile("BrowserName");
             if (driver == null || driver.ToString().ToLower().Equals("null"))
             {
                 driver = BrowserClass.GetBrowserInstanceCreated(browser);
@@ -48,12 +31,26 @@ namespace SeleniumCSharpSpecflowProject
 
         public void LaunchApplication(string url)
         {
-            driver.Url = url;
+            try
+            {
+                driver.Url = url;
+            }
+            catch(Exception e)
+            {
+                Assert.Fail("Failed to initiate driver. " + e.Message);
+            }
         }
 
         public void SendValue(By element, string value)
         {
-            driver.FindElement(element).SendKeys(value);
+            try
+            {
+                driver.FindElement(element).SendKeys(value);
+            }
+            catch(NoSuchElementException e)
+            {
+                Assert.Fail("Element is not available. " + e.Message);
+            }
         }
 
         public void ClickElement(By element)
@@ -174,84 +171,6 @@ namespace SeleniumCSharpSpecflowProject
             }
         }
 
-        public static string ReadDataFromExcel(String columnName)
-        {
-            string pathOfExcelFile = Directory.GetParent(Environment.CurrentDirectory).FullName + @"\SeleniumCSharpSpecflowProject\TestData.xlsx";
-            string testData;
-            FileStream fileStream = new FileStream(pathOfExcelFile,FileMode.Open,FileAccess.ReadWrite);
-            IWorkbook workBook;
-            string extension = pathOfExcelFile.Split(".")[1].Trim();
-            if (extension.Equals("xls"))
-            {
-                workBook = new HSSFWorkbook(fileStream);
-            }
-            else {
-                workBook = new XSSFWorkbook(fileStream);
-            }
-            ISheet sheet = workBook.GetSheet(ReadDataFromConfigFile("Environment"));
-            IRow rowobj;
-            int cell=-1;
-          //  int row = -1;
-             rowobj = sheet.GetRow(0);
-             int Columncount = rowobj.PhysicalNumberOfCells;
-             for (int i=0;i<= Columncount - 1;i++)
-             {
-                 if(rowobj.GetCell(i).StringCellValue.Trim().Equals(columnName,StringComparison.OrdinalIgnoreCase))
-                 {
-                     cell = i;
-                     break;
-                 }
-             }
-             rowobj = sheet.GetRow(1);
-             testData = rowobj.GetCell(cell).StringCellValue.Trim();
-            return testData;
-        }
-
-        public static string ReadDataFromExcel(string rowName,string columnName)
-        {
-            string pathOfExcelFile = Directory.GetParent(Environment.CurrentDirectory).FullName + @"\SeleniumCSharpSpecflowProject\ScenarioLevelTestData.xlsx";
-            string testData="";
-            FileStream fileStream = new FileStream(pathOfExcelFile, FileMode.Open, FileAccess.ReadWrite);
-            IWorkbook workBook;
-            string extension = pathOfExcelFile.Split(".")[1].Trim();
-            if (extension.Equals("xls"))
-            {
-                workBook = new HSSFWorkbook(fileStream);
-            }
-            else
-            {
-                workBook = new XSSFWorkbook(fileStream);
-            }
-            ISheet sheet = workBook.GetSheet(ReadDataFromConfigFile("Environment"));
-            IRow rowobj;
-            int cell = -1;
-            int row = -1;
-            int rowCount = sheet.PhysicalNumberOfRows;
-            for (int j = 0; j <= rowCount - 1; j++)
-            {
-                if (sheet.GetRow(j).GetCell(0).StringCellValue.Trim().Equals(rowName, StringComparison.OrdinalIgnoreCase))
-                {
-                    row = j;
-                    break;
-                }
-            }
-            rowobj = sheet.GetRow(0);
-            int Columncount = rowobj.PhysicalNumberOfCells;
-            for (int i = 0; i <= Columncount - 1; i++)
-            {
-                if (rowobj.GetCell(i).StringCellValue.Trim().Equals(columnName, StringComparison.OrdinalIgnoreCase))
-                {
-                    cell = i;
-                    break;
-                }
-            }
-            rowobj = sheet.GetRow(row);
-            if(!String.IsNullOrEmpty(rowobj.GetCell(cell).StringCellValue))
-            {
-                testData = rowobj.GetCell(cell).StringCellValue.Trim();
-            }
-            return testData;
-        }
 
         /*  public void PassedStepMessage(string passedMessage)
           {

@@ -24,6 +24,7 @@
     <Import Project="$(NuGetPackageRoot)specflow.tools.msbuild.generation\3.9.8\build\SpecFlow.Tools.MsBuild.Generation.props" Condition="Exists('$(NuGetPackageRoot)specflow.tools.msbuild.generation\3.9.8\build\SpecFlow.Tools.MsBuild.Generation.props')" />
     <Import Project="$(NuGetPackageRoot)specrun.specflow.3-9-0\3.9.7\build\SpecRun.SpecFlow.3-9-0.props" Condition="Exists('$(NuGetPackageRoot)specrun.specflow.3-9-0\3.9.7\build\SpecRun.SpecFlow.3-9-0.props')" />
     <Import Project="$(NuGetPackageRoot)specflow.plus.livingdocplugin\3.9.50\build\SpecFlow.Plus.LivingDocPlugin.props" Condition="Exists('$(NuGetPackageRoot)specflow.plus.livingdocplugin\3.9.50\build\SpecFlow.Plus.LivingDocPlugin.props')" />
+    <Import Project="$(NuGetPackageRoot)nunit\3.13.2\build\NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit\3.13.2\build\NUnit.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgSpecRun_Runner Condition=" '$(PkgSpecRun_Runner)' == '' ">C:\Users\Yash\.nuget\packages\specrun.runner\3.9.7</PkgSpecRun_Runner>

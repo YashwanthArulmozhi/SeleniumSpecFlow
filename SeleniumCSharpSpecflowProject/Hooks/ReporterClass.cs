@@ -2,6 +2,7 @@
 using AventStack.ExtentReports;
 using AventStack.ExtentReports.Gherkin.Model;
 using AventStack.ExtentReports.Reporter;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -129,6 +130,7 @@ namespace SeleniumCSharpSpecflowProject
          public static void AddFailedStepLog(string failedDescription)
          {
             stepName.Fail(failedDescription);
+            Assert.Fail();
          }
 
         [AfterTestRun]

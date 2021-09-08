@@ -17,9 +17,12 @@
     <PackageReference Include="ExtentReports" Version="4.1.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     <PackageReference Include="NPOI" Version="2.5.4" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
     <PackageReference Include="Selenium.Support" Version="3.141.0" />
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="SpecFlow" Version="3.9.22" />
     <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.50" />
+    <PackageReference Include="SpecRun.Runner" Version="3.9.7" />
 
     
     <PackageReference Include="SpecRun.SpecFlow" Version="3.9.7" />

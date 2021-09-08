@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AqLsRZXXLeZ9fgcR+W06007nUUKuRF5bUeZ8uzq55w1FDY2V1HgCLy+4bUzD2cm6scVfR635DXPLxE0n2c3lTA==",
+  "dgSpecHash": "wgEW0tEGh3/Lo46DqWBTxZPuoBowVQdlNJlh15j0cIFEDWj1m3qLN8vdpSsjstWFovLlb1pXMe/mis3iUrhy2w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Yash\\Documents\\Projects\\SeleniumSpecFlow\\SeleniumSpecFlow\\SeleniumCSharpSpecflowProject\\SeleniumCSharpSpecflowProject.csproj",
   "expectedPackageFiles": [
@@ -86,10 +86,11 @@
     "C:\\Users\\Yash\\.nuget\\packages\\mongodb.driver\\2.10.0\\mongodb.driver.2.10.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\mongodb.driver.core\\2.10.0\\mongodb.driver.core.2.10.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\mongodb.libmongocrypt\\1.0.0\\mongodb.libmongocrypt.1.0.0.nupkg.sha512",
-    "C:\\Users\\Yash\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
+    "C:\\Users\\Yash\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\npoi\\2.5.4\\npoi.2.5.4.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
+    "C:\\Users\\Yash\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\portable.bouncycastle\\1.8.6\\portable.bouncycastle.1.8.6.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\razorengine.netcore\\2.2.6\\razorengine.netcore.2.2.6.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -113,7 +114,7 @@
     "C:\\Users\\Yash\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\sharpcompress\\0.23.0\\sharpcompress.0.23.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\sharpziplib\\1.3.2\\sharpziplib.1.3.2.nupkg.sha512",
-    "C:\\Users\\Yash\\.nuget\\packages\\specflow\\3.9.8\\specflow.3.9.8.nupkg.sha512",
+    "C:\\Users\\Yash\\.nuget\\packages\\specflow\\3.9.22\\specflow.3.9.22.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\specflow.internal.json\\1.0.8\\specflow.internal.json.1.0.8.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\specflow.plus.livingdocplugin\\3.9.50\\specflow.plus.livingdocplugin.3.9.50.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\specflow.tools.msbuild.generation\\3.9.8\\specflow.tools.msbuild.generation.3.9.8.nupkg.sha512",
@@ -149,7 +150,6 @@
     "C:\\Users\\Yash\\.nuget\\packages\\system.globalization.extensions\\4.3.0\\system.globalization.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.io.compression\\4.3.0\\system.io.compression.4.3.0.nupkg.sha512",
-    "C:\\Users\\Yash\\.nuget\\packages\\system.io.compression.zipfile\\4.3.0\\system.io.compression.zipfile.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.io.pipelines\\4.5.2\\system.io.pipelines.4.5.2.nupkg.sha512",
@@ -161,7 +161,6 @@
     "C:\\Users\\Yash\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.net.security\\4.3.2\\system.net.security.4.3.2.nupkg.sha512",
-    "C:\\Users\\Yash\\.nuget\\packages\\system.net.sockets\\4.3.0\\system.net.sockets.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
@@ -178,7 +177,7 @@
     "C:\\Users\\Yash\\.nuget\\packages\\system.runtime.extensions\\4.3.0\\system.runtime.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.runtime.handles\\4.3.0\\system.runtime.handles.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.runtime.interopservices\\4.3.0\\system.runtime.interopservices.4.3.0.nupkg.sha512",
-    "C:\\Users\\Yash\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation\\4.3.0\\system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512",
+    "C:\\Users\\Yash\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation\\4.0.0\\system.runtime.interopservices.runtimeinformation.4.0.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.runtime.loader\\4.3.0\\system.runtime.loader.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.runtime.numerics\\4.3.0\\system.runtime.numerics.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.runtime.serialization.formatters\\4.3.0\\system.runtime.serialization.formatters.4.3.0.nupkg.sha512",
@@ -208,7 +207,6 @@
     "C:\\Users\\Yash\\.nuget\\packages\\system.threading.tasks.parallel\\4.3.0\\system.threading.tasks.parallel.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.threading.thread\\4.3.0\\system.threading.thread.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.threading.threadpool\\4.3.0\\system.threading.threadpool.4.3.0.nupkg.sha512",
-    "C:\\Users\\Yash\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.valuetuple\\4.3.0\\system.valuetuple.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
@@ -217,5 +215,16 @@
     "C:\\Users\\Yash\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Yash\\.nuget\\packages\\webdrivermanager\\2.11.3\\webdrivermanager.2.11.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: SpecFlow.Tools.MsBuild.Generation 3.9.8 requires SpecFlow (= 3.9.8) but version SpecFlow 3.9.22 was resolved.",
+      "libraryId": "SpecFlow",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

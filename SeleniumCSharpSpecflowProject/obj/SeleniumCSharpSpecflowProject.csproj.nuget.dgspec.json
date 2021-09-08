@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[2.5.4, )"
             },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.2, )"
+            },
             "Selenium.Support": {
               "target": "Package",
               "version": "[3.141.0, )"
@@ -72,9 +76,17 @@
               "target": "Package",
               "version": "[3.141.0, )"
             },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.9.22, )"
+            },
             "SpecFlow.Plus.LivingDocPlugin": {
               "target": "Package",
               "version": "[3.9.50, )"
+            },
+            "SpecRun.Runner": {
+              "target": "Package",
+              "version": "[3.9.7, )"
             },
             "SpecRun.SpecFlow": {
               "target": "Package",

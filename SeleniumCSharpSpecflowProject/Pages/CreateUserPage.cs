@@ -1,6 +1,8 @@
 ﻿using FluentAssertions;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using SeleniumCSharpSpecflowProject.Steps;
+using SpecFlowWithNunit.Utils;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -39,24 +41,38 @@ namespace SeleniumCSharpSpecflowProject
 
         public void LaunchTheApplication()
         {
-            // string v = "http://thedemosite.co.uk/login.php";
-            applicationUrl = ReadDataFromExcel(CreateUserSteps.scenarioTitle, "URL");
-            LaunchApplication(applicationUrl);
-            ReporterClass.AddStepLog("Application URL - > " + applicationUrl);
+            try
+            {
+                // string v = "http://thedemosite.co.uk/login.php";
+                applicationUrl = ExcelUtils.ReadDataFromExcel(CreateUserSteps.scenarioTitle, "URL");
+                LaunchApplication(applicationUrl);
+                ReporterClass.AddStepLog("Application URL - > " + applicationUrl);
+            }
+            catch(Exception e)
+            {
+                Assert.Fail("Driver Issues. Failed to launch Browser. " + e.Message);
+            }
         }
 
         public void ClickRubProjectIfDisplayed()
         {
-            if(WaitForDynamicObjectToAppear(link_RunProject)==true)
+            try
             {
-                ClickElement(link_RunProject);
+                if (WaitForDynamicObjectToAppear(link_RunProject) == true)
+                {
+                    ClickElement(link_RunProject);
+                }
+            }
+            catch (Exception e)
+            {
+                Assert.Fail("Element Issue. " + e.Message);
             }
         }
 
         public void RegisterUser()
         {
-            userName = ReadDataFromExcel(CreateUserSteps.scenarioTitle, "Username");
-            password = ReadDataFromExcel(CreateUserSteps.scenarioTitle, "Password");
+            userName = ExcelUtils.ReadDataFromExcel(CreateUserSteps.scenarioTitle, "Username");
+            password = ExcelUtils.ReadDataFromExcel(CreateUserSteps.scenarioTitle, "Password");
             ClickRubProjectIfDisplayed();
             if (WaitForElement(link_Register) != null)
             {
