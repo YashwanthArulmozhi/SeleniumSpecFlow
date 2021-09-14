@@ -17,7 +17,6 @@ namespace SeleniumCSharpSpecflowProject.Steps
             scenarioTitle = scenarioContext.ScenarioInfo.Title;
         }
 
-       
 
         [Given(@"Launch the application")]
         public void GivenLaunchTheApplication()

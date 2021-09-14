@@ -1,0 +1,209 @@
+﻿2021-09-14T04:42:15.1037653-07:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2021-09-14T04:42:15.1039667-07:00;VSTestExecutionThread;Info;SpecFlow+Runner 3.9.7 in Framework netcore31 in x64 mode execution started
+2021-09-14T04:42:15.1039719-07:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2021-09-14T04:42:15.1055925-07:00;VSTestExecutionThread;Info;Current UserName: 'Yash', MachineName: 'DESKTOP-HBFE069'
+2021-09-14T04:42:15.2037301-07:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SeleniumCSharpSpecflowProject.dll
+2021-09-14T04:42:15.2040219-07:00;VSTestExecutionThread;Info;Output folder configured to "C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\TestResults" (default)
+2021-09-14T04:42:15.2040829-07:00;VSTestExecutionThread;Info;Profile: SpecflowProjectReport
+2021-09-14T04:42:15.2337965-07:00;VSTestExecutionThread;Info;Log file path: C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\TestResults\SpecflowProjectReport_SpecflowProjectReport_2021-09-14T044215.log
+2021-09-14T04:42:15.2385910-07:00;Thread#12;Info;Checking activation
+2021-09-14T04:42:15.3173255-07:00;Thread#12;Info;Activated.
+2021-09-14T04:42:15.3175510-07:00;Thread#12;Info;Activation check completed
+2021-09-14T04:42:15.3176311-07:00;Thread#12;Info;Starting test run
+2021-09-14T04:42:15.3956839-07:00;Thread#12;Info;Discovering target: Default
+2021-09-14T04:42:15.3960220-07:00;Thread#12;Info;Discovering tests from assembly: C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SeleniumCSharpSpecflowProject.dll
+2021-09-14T04:42:15.4950919-07:00;Thread#12;Info;Discovered tests from assembly: C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SeleniumCSharpSpecflowProject.dll
+2021-09-14T04:42:15.4962957-07:00:Test Suite Dump
+2021-09-14T04:42:15.4977724-07:00:#0: SpecflowProjectReport/SpecflowProjectReport - 
+2021-09-14T04:42:15.4977943-07:00:#1: Default - 
+2021-09-14T04:42:15.4977969-07:00:#2: SeleniumCSharpSpecflowProject - 
+2021-09-14T04:42:15.4977988-07:00:#3: DemoQa - 
+2021-09-14T04:42:15.4986772-07:00:#4: Launch application and Create user and validate the user is create successfully - TestAssembly:SeleniumCSharpSpecflowProject/Feature:DemoQa/Scenario:Launch+application+and+Create+user+and+validate+the+user+is+create+successfully
+2021-09-14T04:42:15.4987159-07:00:#5: Login to the application with the newly created user and validate login successful - TestAssembly:SeleniumCSharpSpecflowProject/Feature:DemoQa/Scenario:Login+to+the+application+with+the+newly+created+user+and+validate+login+successful
+2021-09-14T04:42:15.4987428-07:00:End: Test Suite Dump
+2021-09-14T04:42:15.5135156-07:00:Thread#0:Scheduler: get next test for thread 0
+2021-09-14T04:42:15.5152123-07:00:Thread#:Scheduler: testitem #4 from normal test queue 
+2021-09-14T04:42:15.5152633-07:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2021-09-14T04:42:15.5184155-07:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2021-09-14T04:42:15.5184409-07:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2021-09-14T04:42:15.5184439-07:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2021-09-14T04:42:15.5184476-07:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2021-09-14T04:42:15.5191124-07:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2021-09-14T04:42:15.5206929-07:00:Thread#0:Scheduler: with testItemExecutionIndex 0
+2021-09-14T04:42:15.5231836-07:00:Thread #0: creating new test thread executor for SeleniumCSharpSpecflowProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+2021-09-14T04:42:15.5253434-07:00:Thread #0: Creating test assembly executor for execution model OutProc
+2021-09-14T04:42:15.5255207-07:00:Thread #0: Creating test assembly executor for execution model OutProc
+2021-09-14T04:42:15.5276807-07:00:Thread #0: using TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.OutOfProcessTestAssemblyExecutorHost to execute tests
+2021-09-14T04:42:15.5291282-07:00:starting Out Of Process Executor
+2021-09-14T04:42:15.5307092-07:00:Assembly resolving Microsoft.VisualStudio.Validation, Version=15.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-09-14T04:42:15.5335661-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' from .deps.json file
+2021-09-14T04:42:15.5335869-07:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' from .deps.json
+2021-09-14T04:42:15.5348495-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1'
+2021-09-14T04:42:15.5351678-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Validation.dll'
+2021-09-14T04:42:15.5353302-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Validation.exe'
+2021-09-14T04:42:15.5353827-07:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1'
+2021-09-14T04:42:15.5355810-07:00:TargetFramework: .NETCoreApp,Version=v3.1
+2021-09-14T04:42:15.5358376-07:00:Tfm: netcoreapp3.1
+2021-09-14T04:42:15.5358502-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1'
+2021-09-14T04:42:15.5358528-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Validation.dll'
+2021-09-14T04:42:15.5359430-07:00:[AssemblyCache] Found file 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Validation.dll' for assembly 'Microsoft.VisualStudio.Validation'
+2021-09-14T04:42:15.5364546-07:00:[AssemblyCache] Resolved 'Microsoft.VisualStudio.Validation' to C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Validation.dll
+2021-09-14T04:42:15.5372611-07:00:Starting callback TCP Rpc server
+2021-09-14T04:42:15.5507072-07:00:Asynchronously starting background TCP Rpc Server on port 32768
+2021-09-14T04:42:15.5507527-07:00:Started callback TCP Rpc server on port 32768
+2021-09-14T04:42:15.5507558-07:00:Starting logger TCP Rpc server
+2021-09-14T04:42:15.5521303-07:00:Asynchronously starting background TCP Rpc Server on port 32769
+2021-09-14T04:42:15.5521703-07:00:Started logger TCP Rpc server on port 32769
+2021-09-14T04:42:15.6248493-07:00:Executing test executor at 'dotnet' 'exec "C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\TechTalk.SpecRun.Framework.Executor.anycpu.netcoreapp3_1.dll" --remoteRunnerPid 11556 --uniqueId "2021-09-14T044215" --outputFolder "C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\TestResults" --callbackPort 32768 --loggerPort 32769' in 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1'
+2021-09-14T04:42:15.6324935-07:00:Executor with PID 11476 has been started successfully.
+2021-09-14T04:42:15.6356568-07:00:Out of Process Executor 11476 started
+2021-09-14T04:42:15.6356849-07:00:Waiting for endpoint
+2021-09-14T04:42:15.9861018-07:00:Assembly resolving Microsoft.VisualStudio.Threading, Version=15.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-09-14T04:42:15.9861739-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' from .deps.json file
+2021-09-14T04:42:15.9862112-07:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' from .deps.json
+2021-09-14T04:42:15.9862233-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1'
+2021-09-14T04:42:15.9862328-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Threading.dll'
+2021-09-14T04:42:15.9863523-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Threading.exe'
+2021-09-14T04:42:15.9864595-07:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1'
+2021-09-14T04:42:15.9864698-07:00:TargetFramework: .NETCoreApp,Version=v3.1
+2021-09-14T04:42:15.9865013-07:00:Tfm: netcoreapp3.1
+2021-09-14T04:42:15.9865225-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1'
+2021-09-14T04:42:15.9865396-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Threading.dll'
+2021-09-14T04:42:15.9868337-07:00:[AssemblyCache] Found file 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Threading.dll' for assembly 'Microsoft.VisualStudio.Threading'
+2021-09-14T04:42:15.9887017-07:00:[AssemblyCache] Resolved 'Microsoft.VisualStudio.Threading' to C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Threading.dll
+2021-09-14T04:42:16.2471592-07:00:Remote executor port received: 32770
+2021-09-14T04:42:16.2474477-07:00:Creating executor TCP client on port 32770
+2021-09-14T04:42:16.2477482-07:00:Created executor TCP client on port 32770
+2021-09-14T04:42:16.2477570-07:00:Connecting to remote executor TCP server
+2021-09-14T04:42:16.2484648-07:00:Connected remote executor TCP server
+2021-09-14T04:42:16.2486566-07:00:trying to connect to Out of Process Executor the 1 attempt
+2021-09-14T04:42:16.2486676-07:00:Connection to Out of Process Executor established in the 1 attempt
+2021-09-14T04:42:16.4022552-07:00:2021-09-14T04:42:16.4012668-07:00:OutOfProcessTestAssemblyExecutor: initialized for C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SeleniumCSharpSpecflowProject.dll on test thread #0
+2021-09-14T04:42:16.4075245-07:00:Endpoint 11476 started
+2021-09-14T04:42:16.4258941-07:00:2021-09-14T04:42:16.4254170-07:00:OutOfProcessTestAssemblyExecutor: running tests...
+2021-09-14T04:42:16.6010621-07:00:2021-09-14T04:42:16.6005856-07:00:Assembly resolving TechTalk.SpecFlow, Version=3.9.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41
+2021-09-14T04:42:16.6045934-07:00:2021-09-14T04:42:16.6041466-07:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecFlow' from .deps.json file
+2021-09-14T04:42:16.6073861-07:00:2021-09-14T04:42:16.6069942-07:00:[AssemblyCache] Resolved 'TechTalk.SpecFlow' to 'C:\Users\Yash\.nuget\packages\specflow\3.9.22\lib\netstandard2.0\TechTalk.SpecFlow.dll'
+2021-09-14T04:42:16.7010578-07:00:2021-09-14T04:42:16.6998617-07:00:Thread#0:T:-> Loading plugin C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SeleniumCSharpSpecflowProject.dll
+2021-09-14T04:42:16.7046360-07:00:2021-09-14T04:42:16.7025182-07:00:Assembly resolving Microsoft.Extensions.DependencyModel, Version=1.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-09-14T04:42:16.7090640-07:00:2021-09-14T04:42:16.7064182-07:00:[AssemblyCache] Trying to resolve 'Microsoft.Extensions.DependencyModel' from .deps.json file
+2021-09-14T04:42:16.7131406-07:00:2021-09-14T04:42:16.7109469-07:00:[AssemblyCache] Resolved 'Microsoft.Extensions.DependencyModel' to 'C:\Users\Yash\.nuget\packages\microsoft.extensions.dependencymodel\1.0.3\lib\netstandard1.6\Microsoft.Extensions.DependencyModel.dll'
+2021-09-14T04:42:16.7862116-07:00:2021-09-14T04:42:16.7847795-07:00:Assembly resolving Microsoft.DotNet.PlatformAbstractions, Version=1.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-09-14T04:42:16.7871403-07:00:2021-09-14T04:42:16.7866978-07:00:[AssemblyCache] Trying to resolve 'Microsoft.DotNet.PlatformAbstractions' from .deps.json file
+2021-09-14T04:42:16.7879645-07:00:2021-09-14T04:42:16.7876247-07:00:[AssemblyCache] Resolved 'Microsoft.DotNet.PlatformAbstractions' to 'C:\Users\Yash\.nuget\packages\microsoft.dotnet.platformabstractions\1.0.3\lib\netstandard1.3\Microsoft.DotNet.PlatformAbstractions.dll'
+2021-09-14T04:42:16.7946964-07:00:2021-09-14T04:42:16.7942435-07:00:Thread#0:T:-> Loading plugin C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\LivingDoc.SpecFlowPlugin.dll
+2021-09-14T04:42:16.7971957-07:00:2021-09-14T04:42:16.7967650-07:00:Assembly resolving LivingDoc.Dtos, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+2021-09-14T04:42:16.7979293-07:00:2021-09-14T04:42:16.7975258-07:00:[AssemblyCache] Trying to resolve 'LivingDoc.Dtos' from .deps.json file
+2021-09-14T04:42:16.7986932-07:00:2021-09-14T04:42:16.7983779-07:00:[AssemblyCache] Resolved 'LivingDoc.Dtos' to 'C:\Users\Yash\.nuget\packages\specflow.plus.livingdocplugin\3.9.50\lib\netstandard2.0\LivingDoc.Dtos.dll'
+2021-09-14T04:42:16.8011415-07:00:2021-09-14T04:42:16.8007663-07:00:Thread#0:T:-> Loading plugin C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\bin\Debug\netcoreapp3.1\SpecRun.Runtime.SpecFlowPlugin.dll
+2021-09-14T04:42:16.8103533-07:00:2021-09-14T04:42:16.8098720-07:00:Thread#0:T:-> Using default config
+2021-09-14T04:42:16.8258241-07:00:2021-09-14T04:42:16.8253636-07:00:Assembly resolving Cucumber.Messages, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b10c5988214f940c
+2021-09-14T04:42:16.8264530-07:00:2021-09-14T04:42:16.8261404-07:00:[AssemblyCache] Trying to resolve 'Cucumber.Messages' from .deps.json file
+2021-09-14T04:42:16.8271138-07:00:2021-09-14T04:42:16.8268191-07:00:[AssemblyCache] Resolved 'Cucumber.Messages' to 'C:\Users\Yash\.nuget\packages\cucumber.messages\6.0.1\lib\netstandard2.0\Cucumber.Messages.dll'
+2021-09-14T04:42:16.8287765-07:00:2021-09-14T04:42:16.8284567-07:00:Assembly resolving Google.Protobuf, Version=3.7.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604
+2021-09-14T04:42:16.8293679-07:00:2021-09-14T04:42:16.8290827-07:00:[AssemblyCache] Trying to resolve 'Google.Protobuf' from .deps.json file
+2021-09-14T04:42:16.8300798-07:00:2021-09-14T04:42:16.8297443-07:00:[AssemblyCache] Resolved 'Google.Protobuf' to 'C:\Users\Yash\.nuget\packages\google.protobuf\3.7.0\lib\netstandard1.0\Google.Protobuf.dll'
+2021-09-14T04:42:16.8354898-07:00:2021-09-14T04:42:16.8349601-07:00:Assembly resolving Microsoft.VisualStudio.TestPlatform.ObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-09-14T04:42:16.8360724-07:00:2021-09-14T04:42:16.8357378-07:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.TestPlatform.ObjectModel' from .deps.json file
+2021-09-14T04:42:16.8368844-07:00:2021-09-14T04:42:16.8365292-07:00:[AssemblyCache] Resolved 'Microsoft.VisualStudio.TestPlatform.ObjectModel' to 'C:\Users\Yash\.nuget\packages\microsoft.testplatform.objectmodel\16.5.0\lib\netstandard2.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll'
+2021-09-14T04:42:16.8565045-07:00:2021-09-14T04:42:16.8560514-07:00:Thread#0:T:-> error: The binding methods for before/after feature and before/after test run events must be static! SeleniumCSharpSpecflowProject:SeleniumCSharpSpecflowProject.Steps.CreateUserSteps.CloseBrowserInstances() (0.0s)
+2021-09-14T04:42:16.8822515-07:00:2021-09-14T04:42:16.8817525-07:00:OutOfProcessTestAssemblyExecutor: RunTest error: TechTalk.SpecFlow.BindingException: The binding methods for before/after feature and before/after test run events must be static! SeleniumCSharpSpecflowProject:SeleniumCSharpSpecflowProject.Steps.CreateUserSteps.CloseBrowserInstances()
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.GetNonStaticEventError(IBindingMethod method) in D:\a\1\s\TechTalk.SpecFlow\ErrorHandling\ErrorProvider.cs:line 128
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingSourceProcessor.ValidateHook(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, HookType hookType) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\RuntimeBindingSourceProcessor.cs:line 54
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, BindingScope scope) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\BindingSourceProcessor.cs:line 168
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.<>c__DisplayClass21_0.<ProcessHookAttribute>b__1(BindingScope scope) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\BindingSourceProcessor.cs:line 149
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes, BindingSourceAttribute hookAttribute) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\BindingSourceProcessor.cs:line 150
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHooks(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\BindingSourceProcessor.cs:line 121
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessMethod(BindingSourceMethod bindingSourceMethod) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\BindingSourceProcessor.cs:line 108
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromType(Type type) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\RuntimeBindingRegistryBuilder.cs:line 49
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromAssembly(Assembly assembly) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\RuntimeBindingRegistryBuilder.cs:line 25
+   at TechTalk.SpecFlow.TestRunnerManager.BuildBindingRegistry(IEnumerable`1 bindingAssemblies) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 92
+   at TechTalk.SpecFlow.TestRunnerManager.InitializeBindingRegistry(ITestRunner testRunner) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 75
+   at TechTalk.SpecFlow.TestRunnerManager.CreateTestRunner(Int32 threadId) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 63
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunnerWithoutExceptionHandling(Int32 threadId) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 155
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(Int32 threadId) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 136
+   at TechTalk.SpecFlow.TestRunnerManager.OnTestRunStart(Assembly testAssembly, IContainerBuilder containerBuilder) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 232
+   at SeleniumCSharpSpecflowProject_SpecFlowPlusRunnerAssemblyHooks.AssemblyInitialize() in C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\obj\Debug\netcoreapp3.1\SpecFlow.Plus.Runner.AssemblyHooks.cs:line 12
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.RunAssemblyInitializeExecutors(ITestAssemblyExecutorsProvider testAssemblyExecutorsProvider, ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.RunTests(ITestAssemblyExecutorState executorState, ITestAssemblyExecutorsProvider testAssemblyExecutorsProvider, ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.InProcess.InProcAppDomainTestAssemblyExecutor.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProcess.OutOfProcessTestAssemblyExecutor.RunTests(TestThreadState testThreadState)
+2021-09-14T04:42:16.8829941-07:00:2021-09-14T04:42:16.8825921-07:00:OutOfProcessTestAssemblyExecutorReceiver - Error at RunTests - TechTalk.SpecFlow.BindingException: The binding methods for before/after feature and before/after test run events must be static! SeleniumCSharpSpecflowProject:SeleniumCSharpSpecflowProject.Steps.CreateUserSteps.CloseBrowserInstances()
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.GetNonStaticEventError(IBindingMethod method) in D:\a\1\s\TechTalk.SpecFlow\ErrorHandling\ErrorProvider.cs:line 128
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingSourceProcessor.ValidateHook(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, HookType hookType) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\RuntimeBindingSourceProcessor.cs:line 54
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, BindingScope scope) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\BindingSourceProcessor.cs:line 168
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.<>c__DisplayClass21_0.<ProcessHookAttribute>b__1(BindingScope scope) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\BindingSourceProcessor.cs:line 149
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes, BindingSourceAttribute hookAttribute) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\BindingSourceProcessor.cs:line 150
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessHooks(BindingSourceMethod bindingSourceMethod, BindingScope[] methodScopes) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\BindingSourceProcessor.cs:line 121
+   at TechTalk.SpecFlow.Bindings.Discovery.BindingSourceProcessor.ProcessMethod(BindingSourceMethod bindingSourceMethod) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\BindingSourceProcessor.cs:line 108
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromType(Type type) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\RuntimeBindingRegistryBuilder.cs:line 49
+   at TechTalk.SpecFlow.Bindings.Discovery.RuntimeBindingRegistryBuilder.BuildBindingsFromAssembly(Assembly assembly) in D:\a\1\s\TechTalk.SpecFlow\Bindings\Discovery\RuntimeBindingRegistryBuilder.cs:line 25
+   at TechTalk.SpecFlow.TestRunnerManager.BuildBindingRegistry(IEnumerable`1 bindingAssemblies) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 92
+   at TechTalk.SpecFlow.TestRunnerManager.InitializeBindingRegistry(ITestRunner testRunner) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 75
+   at TechTalk.SpecFlow.TestRunnerManager.CreateTestRunner(Int32 threadId) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 63
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunnerWithoutExceptionHandling(Int32 threadId) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 155
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(Int32 threadId) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 136
+   at TechTalk.SpecFlow.TestRunnerManager.OnTestRunStart(Assembly testAssembly, IContainerBuilder containerBuilder) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 232
+   at SeleniumCSharpSpecflowProject_SpecFlowPlusRunnerAssemblyHooks.AssemblyInitialize() in C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\SeleniumCSharpSpecflowProject\obj\Debug\netcoreapp3.1\SpecFlow.Plus.Runner.AssemblyHooks.cs:line 12
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.RunAssemblyInitializeExecutors(ITestAssemblyExecutorsProvider testAssemblyExecutorsProvider, ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.RunTests(ITestAssemblyExecutorState executorState, ITestAssemblyExecutorsProvider testAssemblyExecutorsProvider, ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.InProcess.InProcAppDomainTestAssemblyExecutor.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProcess.OutOfProcessTestAssemblyExecutor.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProcess.OutOfProcessTestAssemblyExecutorReceiver.RunTests(TestThreadState testThreadState)
+2021-09-14T04:42:16.9049042-07:00:test thread #0 error: StreamJsonRpc.RemoteInvocationException: The binding methods for before/after feature and before/after test run events must be static! SeleniumCSharpSpecflowProject:SeleniumCSharpSpecflowProject.Steps.CreateUserSteps.CloseBrowserInstances()
+   at StreamJsonRpc.JsonRpc.InvokeCoreAsync[TResult](Nullable`1 id, String targetName, IReadOnlyList`1 arguments, CancellationToken cancellationToken, Boolean isParameterObject)
+   at TechTalk.SpecFlow.Plus.RPC.TcpRpcClient.Invoke[T](String methodName, Object[] parameters)
+   at TechTalk.SpecFlow.Plus.RPC.AsyncHelper.RunSync[TResult](Func`1 func)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.OutOfProcessTestAssemblyExecutorClient.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.RemoteExecutor.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.OutOfProcessTestAssemblyExecutorHost.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.TestThread.RunNonEmptyTestSuite(CancellationToken cancellationToken, TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.TestThread.Run(ITestExecutionManager executionManagerForRun, CancellationToken cancellationToken)
+   at TechTalk.SpecRun.Framework.AsyncTestThreadRunner.RunSync(TestExecutionManager executionManager, CancellationToken cancellationToken)
+2021-09-14T04:42:16.9059029-07:00:test thread error: TechTalk.SpecRun.Framework.SpecRunException: At least one test thread aborted.
+ ---> StreamJsonRpc.RemoteInvocationException: The binding methods for before/after feature and before/after test run events must be static! SeleniumCSharpSpecflowProject:SeleniumCSharpSpecflowProject.Steps.CreateUserSteps.CloseBrowserInstances()
+   at StreamJsonRpc.JsonRpc.InvokeCoreAsync[TResult](Nullable`1 id, String targetName, IReadOnlyList`1 arguments, CancellationToken cancellationToken, Boolean isParameterObject)
+   at TechTalk.SpecFlow.Plus.RPC.TcpRpcClient.Invoke[T](String methodName, Object[] parameters)
+   at TechTalk.SpecFlow.Plus.RPC.AsyncHelper.RunSync[TResult](Func`1 func)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.OutOfProcessTestAssemblyExecutorClient.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.RemoteExecutor.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.OutOfProcessTestAssemblyExecutorHost.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.TestThread.RunNonEmptyTestSuite(CancellationToken cancellationToken, TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.TestThread.Run(ITestExecutionManager executionManagerForRun, CancellationToken cancellationToken)
+   at TechTalk.SpecRun.Framework.AsyncTestThreadRunner.RunSync(TestExecutionManager executionManager, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+2021-09-14T04:42:16.9116487-07:00:Thread#-1: Test #4/0 is started on thread #-1
+2021-09-14T04:42:16.9128846-07:00:Thread#-1: Test #4/0 is finished on thread #-1 as Skipped within 0.0005095 seconds
+2021-09-14T04:42:16.9168935-07:00:Thread#-1:Scheduler: get next test for thread -1
+2021-09-14T04:42:16.9170046-07:00:Thread#:Scheduler: testitem #5 from normal test queue 
+2021-09-14T04:42:16.9170199-07:00:Thread#-1:Scheduler: considering testitem #5 for thread -1
+2021-09-14T04:42:16.9170314-07:00:Thread#-1:Scheduler: using testitem #5 for thread -1
+2021-09-14T04:42:16.9170496-07:00:Thread#-1:Scheduler: Test #5 is scheduled for thread
+2021-09-14T04:42:16.9171978-07:00:Thread#-1: Test #5/0 is started on thread #-1
+2021-09-14T04:42:16.9173058-07:00:Thread#-1: Test #5/0 is finished on thread #-1 as Skipped within 2E-05 seconds
+2021-09-14T04:42:16.9174724-07:00:Thread#-1:Scheduler: get next test for thread -1
+2021-09-14T04:42:16.9175082-07:00:Thread#:Scheduler: at the end of normal test queue
+2021-09-14T04:42:16.9175152-07:00:Thread#-1:Scheduler: enumerator for thread is at end
+2021-09-14T04:42:16.9721581-07:00;Thread#12;Info;test run finished
+2021-09-14T04:42:16.9722927-07:00;Thread#12;Info;publishing test results
+2021-09-14T04:42:16.9724408-07:00;Thread#12;Info;Not publishing results.
+2021-09-14T04:42:16.9725316-07:00;Thread#12;Info;test results published
+2021-09-14T04:42:16.9726096-07:00;Thread#12;Info;generating reports
+2021-09-14T04:42:17.0462887-07:00;Thread#12;Info;Starting external report generation process
+2021-09-14T04:42:18.7003440-07:00;Thread#12;Info;Successfully generated reports.
+2021-09-14T04:42:18.7025358-07:00;Thread#12;Info;Successfully generated reports
+2021-09-14T04:42:18.7126669-07:00:Total: 2
+2021-09-14T04:42:18.7143421-07:00:Succeeded: 0
+2021-09-14T04:42:18.7146116-07:00:Ignored: 0
+2021-09-14T04:42:18.7148112-07:00:Pending: 0
+2021-09-14T04:42:18.7148199-07:00:Skipped: 2
+2021-09-14T04:42:18.7150006-07:00:Failed: 0
+2021-09-14T04:42:18.7162155-07:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2021-09-14T04:42:18.7162845-07:00;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Users\Yash\Documents\Projects\SeleniumSpecFlow\SeleniumSpecFlow\TestResults\SpecflowProjectReport_SpecflowProjectReport_2021-09-14T044215.html'
+========== End of log file ==========

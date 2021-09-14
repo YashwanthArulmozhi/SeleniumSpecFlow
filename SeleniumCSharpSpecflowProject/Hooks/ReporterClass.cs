@@ -24,6 +24,8 @@ namespace SeleniumCSharpSpecflowProject
        private static ExtentTest scenarioName;
         static ExtentTest stepName;
         public static ThreadLocal<ExtentTest> scenarioThreadLocal = new ThreadLocal<ExtentTest>();
+
+       
        
 
         [BeforeTestRun]
@@ -138,8 +140,18 @@ namespace SeleniumCSharpSpecflowProject
         {
             try
             {
+                CommonActionClass.QuitDriverInstance();
                 extentReports.Flush();
-                System.Diagnostics.Process.Start(reportCompleteFilePath);
+                System.Diagnostics.Process process = new System.Diagnostics.Process();
+                process.StartInfo.UseShellExecute = true;
+                process.StartInfo.FileName = reportCompleteFilePath + "index.html";
+                process.Start();
+                System.Diagnostics.Process[] allChromeProccess = System.Diagnostics.Process.GetProcessesByName("chromedriver");
+                string s = allChromeProccess[0].ProcessName;
+                foreach (System.Diagnostics.Process chromeprocess in allChromeProccess)
+                {
+                    chromeprocess.Kill();
+                }
             }
             catch (Exception e)
             {

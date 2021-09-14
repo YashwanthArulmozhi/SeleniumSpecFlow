@@ -13,9 +13,9 @@ using SpecFlowWithNunit.Utils;
 
 namespace SeleniumCSharpSpecflowProject
 {
-    class CommonActionClass : ReporterClass
+    class CommonActionClass
     {
-        static IWebDriver driver;
+       public static IWebDriver driver;
 
 
         public CommonActionClass()
@@ -71,6 +71,7 @@ namespace SeleniumCSharpSpecflowProject
         public bool WaitForDynamicObjectToAppear(By Element)
         {
                 int i = 1;
+            Thread.Sleep(3000);
                 do
                 {
                     if (driver.FindElements(Element).Count == 1)
@@ -185,6 +186,11 @@ namespace SeleniumCSharpSpecflowProject
         public void CloseBrowser()
         {
             driver.Close();
+        }
+
+        public static void QuitDriverInstance()
+        {
+            driver.Quit();
         }
     }
 }

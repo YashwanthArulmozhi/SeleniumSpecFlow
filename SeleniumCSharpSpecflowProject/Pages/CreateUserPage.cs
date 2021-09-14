@@ -2,10 +2,13 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using SeleniumCSharpSpecflowProject.Steps;
+using SeleniumExtras.PageObjects;
 using SpecFlowWithNunit.Utils;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
+
 using System.Text;
 
 namespace SeleniumCSharpSpecflowProject
@@ -28,9 +31,13 @@ namespace SeleniumCSharpSpecflowProject
         private By label_Details = By.XPath("//b[text()='The username:']/..");
         private By link_Login = By.XPath("(//a[@href='login.php'])[1]");
 
+        [FindsBy(How = How.XPath, Using = "//a[text()='Register']")]
+        private IWebElement link_Registerlink;
+
         public string applicationUrl;
         public static string userName;
         public static string password;
+
 
        /* public void IntializeData(string scenarioName)
         {
@@ -38,6 +45,11 @@ namespace SeleniumCSharpSpecflowProject
             userName = ReadDataFromExcel(scenarioName, "Username");
             password = ReadDataFromExcel(scenarioName, "Password");
         }*/
+
+        public CreateUserPage()
+        {
+            PageFactory.InitElements(CommonActionClass.driver, this);
+        }
 
         public void LaunchTheApplication()
         {
@@ -47,6 +59,8 @@ namespace SeleniumCSharpSpecflowProject
                 applicationUrl = ExcelUtils.ReadDataFromExcel(CreateUserSteps.scenarioTitle, "URL");
                 LaunchApplication(applicationUrl);
                 ReporterClass.AddStepLog("Application URL - > " + applicationUrl);
+                string test = ConfigurationSettings.AppSettings.Get("testingLevel");
+                ReporterClass.AddStepLog("Testing Level from app config - > "+test);
             }
             catch(Exception e)
             {
@@ -76,7 +90,7 @@ namespace SeleniumCSharpSpecflowProject
             ClickRubProjectIfDisplayed();
             if (WaitForElement(link_Register) != null)
             {
-                ClickElement(link_Register);
+                link_Registerlink.Click();
                 if (WaitForElement(input_FirstName) != null)
                 {
                     SendValue(input_FirstName, userName);
@@ -142,7 +156,7 @@ namespace SeleniumCSharpSpecflowProject
 
         public void CloseDriver()
         {
-            CloseBrowser();
+            QuitDriverInstance();
         }
     }
 }

@@ -19,7 +19,8 @@ namespace SeleniumCSharpSpecflowProject
         private By label_SuccessMsg = By.XPath("//b[contains(text(),'Successful Login')]");
         private By button_Login = By.XPath("//input[@value='Test Login']");
         private By link_Logout = By.XPath("//a[text()='Logout']");
-       String DeleteLink = "//a[contains(text(),'PARAMETER')]/a";
+       String DeleteLink = "//li[contains(text(),'PARAMETER')]/a";
+
 
 
         public void LogIn()
