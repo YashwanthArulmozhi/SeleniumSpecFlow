@@ -20,8 +20,8 @@ namespace SeleniumCSharpSpecflowProject
         private static ExtentReports extentReports;
         static string reportCompleteFilePath;
         static string reporterNameTimeStamp;
-       private static ExtentTest featureName;
-       private static ExtentTest scenarioName;
+        private static ExtentTest featureName;
+        private static ExtentTest scenarioName;
         static ExtentTest stepName;
         public static ThreadLocal<ExtentTest> scenarioThreadLocal = new ThreadLocal<ExtentTest>();
 
@@ -146,12 +146,17 @@ namespace SeleniumCSharpSpecflowProject
                 process.StartInfo.UseShellExecute = true;
                 process.StartInfo.FileName = reportCompleteFilePath + "index.html";
                 process.Start();
-                System.Diagnostics.Process[] allChromeProccess = System.Diagnostics.Process.GetProcessesByName("chromedriver");
-                string s = allChromeProccess[0].ProcessName;
-                foreach (System.Diagnostics.Process chromeprocess in allChromeProccess)
-                {
-                    chromeprocess.Kill();
-                }
+                /* System.Diagnostics.Process[] allChromeProccess = System.Diagnostics.Process.GetProcessesByName("chromedriver");
+                 string s = allChromeProccess[0].ProcessName;
+                 foreach (var chromeprocess in allChromeProccess)
+                 {
+                     chromeprocess.Kill();
+                 }*/
+                process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                process.StartInfo.FileName = "cmd.exe";
+                process.StartInfo.Arguments = "taskkill /F /IM chromedriver.exe /T";
+                process.Start();
+
             }
             catch (Exception e)
             {

@@ -37,7 +37,7 @@ namespace SeleniumCSharpSpecflowProject
             }
             catch(Exception e)
             {
-                Assert.Fail("Failed to initiate driver. " + e.Message);
+                Assert.Fail("Failed to initiate driver. " + e.InnerException);
             }
         }
 
@@ -49,13 +49,20 @@ namespace SeleniumCSharpSpecflowProject
             }
             catch(NoSuchElementException e)
             {
-                Assert.Fail("Element is not available. " + e.Message);
+                Assert.Fail("Element is not available. " + e.InnerException);
             }
         }
 
         public void ClickElement(By element)
         {
-            driver.FindElement(element).Click();
+            try
+            {
+                driver.FindElement(element).Click();
+            }
+            catch (NoSuchElementException e)
+            {
+                Assert.Fail("Element is not available. " + e.InnerException);
+            }
         }
 
         public IWebElement WaitForElement(By element)

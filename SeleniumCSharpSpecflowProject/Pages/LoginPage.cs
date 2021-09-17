@@ -36,7 +36,7 @@ namespace SeleniumCSharpSpecflowProject
         public void ValidateWelcomeMessage()
         {
             WaitForElement(label_Welcome);
-            string UiUserWelcomeMsg = GetTextValue(label_Welcome).Split(" ")[1].Replace("!", "");
+            string UiUserWelcomeMsg = GetTextValue(label_Welcome).Split(" ")[1].Replace("!", "abc");
             if (UiUserWelcomeMsg.Equals(CreateUserPage.userName, StringComparison.OrdinalIgnoreCase))
             {
                 ReporterClass.AddStepLog("UI Message - > " + GetTextValue(label_Welcome));

@@ -55,11 +55,10 @@ namespace SeleniumCSharpSpecflowProject
         {
             try
             {
-                // string v = "http://thedemosite.co.uk/login.php";
                 applicationUrl = ExcelUtils.ReadDataFromExcel(CreateUserSteps.scenarioTitle, "URL");
                 LaunchApplication(applicationUrl);
                 ReporterClass.AddStepLog("Application URL - > " + applicationUrl);
-                string test = ConfigurationSettings.AppSettings.Get("testingLevel");
+                string test = ConfigurationManager.AppSettings["testingLevel"];
                 ReporterClass.AddStepLog("Testing Level from app config - > "+test);
             }
             catch(Exception e)

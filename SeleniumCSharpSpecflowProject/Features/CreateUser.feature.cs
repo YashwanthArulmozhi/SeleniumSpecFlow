@@ -71,11 +71,15 @@ namespace SeleniumCSharpSpecflowProject.Features
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Launch application and Create user and validate the user is create successfully", new string[] {
-                "Scenario1"}, SourceLine=4)]
+                "Scenario1",
+                "Smoke",
+                "Regression"}, SourceLine=4)]
         public virtual void LaunchApplicationAndCreateUserAndValidateTheUserIsCreateSuccessfully()
         {
             string[] tagsOfScenario = new string[] {
-                    "Scenario1"};
+                    "Scenario1",
+                    "Smoke",
+                    "Regression"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Launch application and Create user and validate the user is create successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 5
@@ -113,11 +117,13 @@ namespace SeleniumCSharpSpecflowProject.Features
         
         [TechTalk.SpecRun.ScenarioAttribute("Login to the application with the newly created user and validate login successfu" +
             "l", new string[] {
-                "Scenario2"}, SourceLine=11)]
+                "Scenario2",
+                "Regression"}, SourceLine=11)]
         public virtual void LoginToTheApplicationWithTheNewlyCreatedUserAndValidateLoginSuccessful()
         {
             string[] tagsOfScenario = new string[] {
-                    "Scenario2"};
+                    "Scenario2",
+                    "Regression"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login to the application with the newly created user and validate login successfu" +
                     "l", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
@@ -159,11 +165,15 @@ namespace SeleniumCSharpSpecflowProject.Features
         
         [TechTalk.SpecRun.ScenarioAttribute("Login to the application with the newly created user and Delete the newly created" +
             " user", new string[] {
-                "Scenario3"}, SourceLine=19)]
+                "Scenario3",
+                "Smoke",
+                "Regression"}, SourceLine=19)]
         public virtual void LoginToTheApplicationWithTheNewlyCreatedUserAndDeleteTheNewlyCreatedUser()
         {
             string[] tagsOfScenario = new string[] {
-                    "Scenario3"};
+                    "Scenario3",
+                    "Smoke",
+                    "Regression"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login to the application with the newly created user and Delete the newly created" +
                     " user", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
